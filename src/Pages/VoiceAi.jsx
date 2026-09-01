@@ -85,7 +85,7 @@ const VoiceAI = () => {
               </Link>
             </div>
             <p className="mt-5 text-sm text-gray-400 font-medium">
-              30 days free trial . No credit card required . Rated 4.8/5 on G2
+              30 days free trial . No credit card required .  
             </p>
           </motion.div>
 

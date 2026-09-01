@@ -166,17 +166,6 @@ const AuthPage = () => {
             </div>
          </div>
 
-         <div className="relative z-10 mt-auto pt-12">
-            <div className="flex items-center gap-4">
-               <div className="flex -space-x-3">
-                  <div className="w-10 h-10 rounded-full border-2 border-[#f8f9fb] bg-gray-200"></div>
-                  <div className="w-10 h-10 rounded-full border-2 border-[#f8f9fb] bg-gray-300"></div>
-                  <div className="w-10 h-10 rounded-full border-2 border-[#f8f9fb] bg-gray-400"></div>
-                  <div className="w-10 h-10 rounded-full border-2 border-[#f8f9fb] bg-[#6039ea] flex items-center justify-center text-white text-[10px] font-bold">+5k</div>
-               </div>
-               <p className="text-sm font-medium text-gray-600">Trusted by modern support teams worldwide</p>
-            </div>
-         </div>
       </div>
 
       {/* Right Panel: Auth Form */}

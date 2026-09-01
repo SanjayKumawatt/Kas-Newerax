@@ -45,7 +45,7 @@ const Hero = () => {
             </div>
             
             <p className="mt-5 text-sm text-gray-400 font-medium">
-              No Credit Card Required . 30 Days Free Trial . Rated 4.8/5 on G2
+              No Credit Card Required . 30 Days Free Trial .  
             </p>
           </motion.div>
 
