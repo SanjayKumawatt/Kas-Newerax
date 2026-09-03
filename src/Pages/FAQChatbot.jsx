@@ -31,18 +31,18 @@ const FaqChatbot = () => {
   };
 
   const faqs = [
-    "How does a generative AI chatbot work?",
-    "What are the benefits of using a generative AI chatbot?",
-    "Can I integrate a generative AI chatbot with my existing CRM tools?",
-    "Is a generative AI chatbot suitable for my business?",
-    "Can the generative AI chatbot understand multiple languages?",
-    "How secure is the data shared with a generative AI chatbot?",
-    "Can I customize the generative AI chatbot for my business?",
-    "What industries can benefit from generative AI chatbots?",
-    "How long does it take to set up a generative AI chatbot with Kas newerax?",
-    "Can I measure the performance of my generative AI chatbot?",
-    "What is the cost of implementing a generative AI chatbot?",
-    "Do I need technical skills to manage a generative AI chatbot?"
+    "How does the Kas newerax FAQ chatbot work?",
+    "What are the benefits of using an AI FAQ chatbot?",
+    "Can I connect the FAQ chatbot with my existing CRM tools?",
+    "Is an AI FAQ chatbot suitable for my growing business?",
+    "Can the FAQ chatbot understand multiple languages?",
+    "How secure is the data shared with the chatbot?",
+    "Can I customize the FAQ chatbot for my brand tone?",
+    "What industries can benefit from an FAQ chatbot?",
+    "How long does it take to deploy an FAQ chatbot with Kas newerax?",
+    "Can I measure the performance of my deployed FAQ chatbot?",
+    "What is the cost of implementing an FAQ chatbot?",
+    "Do I need technical skills to manage the FAQ chatbot?"
   ];
 
   return (
@@ -56,21 +56,21 @@ const FaqChatbot = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <motion.div variants={fadeInUp} className="w-full lg:w-1/2 flex flex-col items-start text-left">
             <h1 className="text-[2.5rem] leading-[1.15] sm:text-5xl lg:text-[4rem] font-bold text-[#14142b] tracking-tight mb-6">
-              Automate Customer Queries with a Smart FAQ Chatbot
+              Automate Customer Queries with a Smart FAQ Module
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-xl mb-8">
-              Automate your first line of customer support with a FAQ Chatbot that works 24/7. Handle repetitive queries instantly and deliver a seamless experience to every customer.
+              Automate your first line of customer support with an AI-powered FAQ chatbot. Handle repetitive queries instantly and deliver a seamless experience to every customer, even outside business hours.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <Link to="/try-for-free" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center`}>
-                Try for Free
+              <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center shadow-sm`}>
+                Request Early Access
               </Link>
               <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors text-center`}>
                 Book a Demo
               </Link>
             </div>
             <p className="mt-5 text-sm text-gray-400 font-medium">
-              30 days free trial . No credit card required .  
+              Currently in early access and pilot stage.  
             </p>
           </motion.div>
 
@@ -118,7 +118,7 @@ const FaqChatbot = () => {
         className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-24 max-w-3xl mx-auto">
-          Let Customers Help Themselves with a Smart FAQ Chatbot
+          Let Customers Help Themselves with a Smart FAQ Module
         </motion.h2>
 
         <div className="space-y-32">
@@ -128,7 +128,7 @@ const FaqChatbot = () => {
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Quickly Find Answers with AI-Powered Search</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Make it easy for customers to help themselves with lightning-fast, intelligent search. Reduce support tickets by allowing users to find accurate answers instantly, improving efficiency and satisfaction.
+                Make it easy for customers to help themselves with lightning-fast, intelligent search powered by your existing documentation. Reduce support tickets by allowing users to find accurate answers instantly.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -154,9 +154,9 @@ const FaqChatbot = () => {
           {/* Feature 2: Branded Experience */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Launch a FAQ Chatbot in a Fully Branded Experience</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Launch a Chatbot in a Fully Branded Experience</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Build trust with a stunning, customizable interface that blends seamlessly into your website. Create a branded help center where your FAQ Chatbot can guide users through helpful articles and answers with ease.
+                Build trust with a clean, customizable interface that blends seamlessly into your website. Kas newerax allows you to create a branded help center where your FAQ Chatbot can guide users through helpful articles.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -186,9 +186,9 @@ const FaqChatbot = () => {
           {/* Feature 3: Automate FAQs */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Automate FAQs and Streamline Customer Service</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Streamline Customer Service Workflows</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Deploy an AI-powered FAQ Chatbot that delivers real-time answers to common queries. It works around the clock, reduces agent workload, and transfers complex issues to live agents-ensuring a smooth, hybrid support experience.
+                Deploy an AI-powered FAQ Chatbot that delivers answers to common queries automatically. It helps reduce agent workload and smoothly transfers complex issues to your live agents.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -209,7 +209,7 @@ const FaqChatbot = () => {
                        </div>
                     </div>
                     <div className="bg-white px-6 py-3 rounded-full shadow-sm border border-gray-100 text-sm font-medium text-gray-700">
-                       24/7 Automated Resolutions
+                       Automated Answers Outside Business Hours
                     </div>
                  </div>
               </div>
@@ -227,25 +227,25 @@ const FaqChatbot = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold mb-16 text-center max-w-4xl mx-auto">
-            4 Reasons to Choose Kas newerax's Generative AI-Powered Chatbot
+            4 Reasons to Add an FAQ Chatbot to Your Kas newerax Platform
           </motion.h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <motion.div variants={fadeInUp} className="bg-[#1e1642] p-8 rounded-xl border border-white/10 hover:border-[#6039ea] transition-colors">
-              <h3 className="text-xl font-bold mb-4">Automate Routine Queries with Generative AI Chatbot</h3>
-              <p className="text-gray-300 leading-relaxed text-sm">Delegate over 80% of repetitive customer queries to your generative AI chatbot. It resolves issues instantly with AI-driven responses in your brand’s tone, freeing human agents to manage more complex cases.</p>
+              <h3 className="text-xl font-bold mb-4">Automate Routine Queries Efficiently</h3>
+              <p className="text-gray-300 leading-relaxed text-sm">Delegate repetitive customer queries to your FAQ chatbot. It resolves routine issues securely with AI-driven responses in your brand’s tone, freeing human agents to manage more complex cases.</p>
             </motion.div>
             <motion.div variants={fadeInUp} className="bg-[#1e1642] p-8 rounded-xl border border-white/10 hover:border-[#6039ea] transition-colors">
-              <h3 className="text-xl font-bold mb-4">Scale Personalized Support with Generative AI</h3>
-              <p className="text-gray-300 leading-relaxed text-sm">Offer hyper-personalized customer support with your generative AI chatbot, using CRM and ticketing system data to understand intent and deliver tailored resolutions.</p>
+              <h3 className="text-xl font-bold mb-4">Scale Support Without Losing Empathy</h3>
+              <p className="text-gray-300 leading-relaxed text-sm">Offer faster customer support with an AI chatbot that understands the intent of the conversation and can escalate the query directly into your ticketing system.</p>
             </motion.div>
             <motion.div variants={fadeInUp} className="bg-[#1e1642] p-8 rounded-xl border border-white/10 hover:border-[#6039ea] transition-colors">
-              <h3 className="text-xl font-bold mb-4">Train Your Generative AI Chatbot with Multiple Knowledge Sources</h3>
-              <p className="text-gray-300 leading-relaxed text-sm">Quickly enhance your generative AI chatbot’s knowledge by linking it to websites, documents, and help center articles, ensuring it provides accurate answers from the most relevant sources.</p>
+              <h3 className="text-xl font-bold mb-4">Train Using Existing Knowledge Sources</h3>
+              <p className="text-gray-300 leading-relaxed text-sm">Quickly enhance your AI chatbot’s knowledge by linking it to your current website pages and help center articles, ensuring it provides accurate answers from verified sources.</p>
             </motion.div>
             <motion.div variants={fadeInUp} className="bg-[#1e1642] p-8 rounded-xl border border-white/10 hover:border-[#6039ea] transition-colors">
-              <h3 className="text-xl font-bold mb-4">Seamless Generative AI Chatbot Integration</h3>
-              <p className="text-gray-300 leading-relaxed text-sm">Easily integrate your generative AI chatbot with existing systems like Zendesk, Freshdesk, Zoho Desk, and more. Enable effortless ticket creation and management directly within the chatbot interface.</p>
+              <h3 className="text-xl font-bold mb-4">Seamless Handoff Integration</h3>
+              <p className="text-gray-300 leading-relaxed text-sm">Easily keep your FAQ chatbot integrated within the Kas newerax platform. Enable effortless ticket creation and seamless escalation directly within a unified interface.</p>
             </motion.div>
           </div>
         </div>
@@ -315,11 +315,11 @@ const FaqChatbot = () => {
             Expand as confidence grows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/get-started" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Get Started
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
-            <Link to="/demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
-              See a Live Demo
+            <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
+              Book a Demo
             </Link>
           </div>
         </div>

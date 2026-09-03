@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
-  Bot, User, Sparkles, Code2, Globe2, MessageCircle, 
-  Palette, BarChart3, LineChart, TrendingUp, ShieldCheck, 
-  Settings, CheckCircle2, ArrowRightLeft, LayoutTemplate
+  Bot, Link as LinkIcon, FileText, Database, Settings, ShieldCheck, 
+  MessageSquare, Smartphone, Zap, CheckCircle2, Plus, Minus, Users,
+  Code2,
+  Sparkles,
+  ArrowRightLeft,
+  User,
+  Globe2,
+  MessageCircle,
+  Palette,
+  TrendingUp
 } from 'lucide-react';
+
+import img1 from "../assets/gen1.webp"
+import img2 from "../assets/gen2.webp"
+import img3 from "../assets/gen3.jpg"
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -24,6 +35,27 @@ const KasAIBuilder = () => {
   const primaryColor = "text-[#6039ea]";
   const bgPrimary = "bg-[#6039ea]";
 
+  const [openFaq, setOpenFaq] = useState(null);
+
+  const toggleFaq = (index) => {
+    setOpenFaq(openFaq === index ? null : index);
+  };
+
+  const faqs = [
+    "How does the Kas newerax AI builder work?",
+    "What are the benefits of building a custom AI agent?",
+    "Can I integrate the AI agent with my existing CRM tools?",
+    "Is this no-code builder suitable for my business?",
+    "Can the AI agent understand multiple languages?",
+    "How secure is the data used to train the AI agent?",
+    "Can I customize the AI agent for my brand tone?",
+    "What industries can benefit from custom AI agents?",
+    "How long does it take to deploy an AI agent with Kas newerax?",
+    "Can I measure the performance of my deployed AI agent?",
+    "What is the cost of implementing an AI agent?",
+    "Do I need technical skills to build and manage an AI agent?"
+  ];
+
   return (
     <div className="w-full bg-white font-sans overflow-hidden">
       
@@ -37,18 +69,18 @@ const KasAIBuilder = () => {
             Build Your Support AI Agent <br className="hidden sm:block" /> with Kas AI Builder
           </motion.h1>
           <motion.p variants={fadeInUp} className="text-lg text-gray-600 leading-relaxed max-w-3xl mx-auto mb-10">
-            Automate customer support with a no-code AI agent. Connect your knowledge base, CRM, and ticketing systems to automate customer conversations across your website, mobile apps, WhatsApp, and more.
+            Automate customer support with our no-code AI builder module. Connect your knowledge base, CRM, and ticketing systems to manage customer conversations across your web and messaging channels.
           </motion.p>
           <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/try-for-free" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Try for Free
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
             <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors`}>
               Book a Demo
             </Link>
           </motion.div>
           <motion.p variants={fadeInUp} className="mt-5 text-sm text-gray-400 font-medium">
-            30 days free trial . No credit card required .  
+            Currently in early access and pilot stage.  
           </motion.p>
         </div>
       </motion.section>
@@ -60,7 +92,7 @@ const KasAIBuilder = () => {
         className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-24">
-          The Most Easy-to-Use Customer Support AI Agent Builder
+          The Intuitive Customer Support AI Agent Builder
         </motion.h2>
 
         <div className="space-y-32">
@@ -68,16 +100,14 @@ const KasAIBuilder = () => {
           {/* Feature 1: Zero Coding */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Build Support AI Agent with Zero Coding</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Build Support AI Agents with Zero Coding</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Build your AI agent using your own data-website content, documents (PDFs, docs, spreadsheets), and help center articles from Zendesk, Freshdesk, or Salesforce. Configure its responses to match your brand voice with simple prompts.
+                Build your AI agent using your own data—website content, documents, and help center articles from existing platforms. Configure its responses to match your brand voice using simple prompt instructions.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
-              {/* Custom Tailwind Illustration */}
               <div className="relative w-full h-80 bg-[#eef0ff] rounded-3xl flex items-center justify-center overflow-hidden border border-[#d6dcff]">
                 <div className="absolute top-10 left-10 w-24 h-24 bg-[#6039ea]/10 rounded-full blur-2xl"></div>
-                {/* Mock UI elements */}
                 <div className="relative z-10 w-3/4 h-48 bg-white rounded-xl shadow-sm border border-gray-100 flex flex-col overflow-hidden">
                   <div className="h-10 border-b border-gray-100 bg-gray-50 flex items-center px-4 gap-2">
                     <div className="w-3 h-3 rounded-full bg-red-400"></div>
@@ -102,13 +132,12 @@ const KasAIBuilder = () => {
           {/* Feature 2: Hybrid System */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Foolproof Human + AI Agent Hybrid System</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Foolproof Human + AI Hybrid Workflows</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Things may not always go “according to plan” and hence, we have built a seamless AI agent to human hand-off feature where your AI agent can quickly transfer control to a live human agent to handle any escalations ensuring your customer queries never go unanswered.
+                Conversations don't always follow a script. That's why we built a seamless escalation feature where your AI agent can quickly transfer control and context to a live human agent to handle complex queries securely.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
-              {/* Custom Tailwind Illustration */}
               <div className="relative w-full h-80 bg-[#f0fdf4] rounded-3xl flex items-center justify-center overflow-hidden border border-[#dcfce7]">
                 <div className="flex items-center gap-8 z-10">
                   <div className="w-24 h-24 bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2">
@@ -120,7 +149,7 @@ const KasAIBuilder = () => {
                     <span className="text-[10px] font-bold uppercase tracking-wider bg-green-100 px-2 py-1 rounded">Seamless Handoff</span>
                   </div>
                   <div className="w-24 h-24 bg-white rounded-2xl shadow-sm border border-gray-100 flex flex-col items-center justify-center gap-2">
-                    <User className="w-10 h-10 text-green-500" />
+                    <User  className="w-10 h-10 text-green-500" />
                     <span className="text-xs font-bold text-gray-500">HUMAN</span>
                   </div>
                 </div>
@@ -131,13 +160,12 @@ const KasAIBuilder = () => {
           {/* Feature 3: Multilingual & Omnichannel */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Multilingual Support AI Agent Builder with Omnichannel Messaging</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Multilingual Capabilities with Omnichannel Delivery</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Kas newerax supports more than 100 languages including Spanish, Italian, Portuguese, Arabic, and German. Deploy the AI agent on any website or mobile apps built on iOS, Android, Flutter, Ionic, and React Native. Support your customers on WhatsApp, Instagram, Telegram, Line, Viber and more.
+                Kas newerax supports multilingual conversational workflows. Build your agent once and deploy it across web chat, mobile apps, WhatsApp, and other major messaging platforms to meet customers where they are.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
-              {/* Custom Tailwind Illustration */}
               <div className="relative w-full h-80 bg-[#fff5f5] rounded-3xl flex items-center justify-center overflow-hidden border border-[#ffe4e6]">
                 <Globe2 className="absolute w-64 h-64 text-red-100 -right-10 -bottom-10" />
                 <div className="relative z-10 grid grid-cols-2 gap-4">
@@ -161,13 +189,12 @@ const KasAIBuilder = () => {
           {/* Feature 4: Brand Tone */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Keep a Consistent Brand Tone Across All Channels</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Keep a Consistent Brand Tone</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                With Kas newerax, you can customize the tone of the support AI agent to match your company's brand. Use your logo and brand colors to maintain consistent branding across all channels.
+                With Kas newerax, you can configure the tone of the support AI agent to match your company's guidelines. Use your brand colors and parameters to maintain consistent interactions across all channels.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
-              {/* Custom Tailwind Illustration */}
               <div className="relative w-full h-80 bg-[#fdf4ff] rounded-3xl flex flex-col items-center justify-center overflow-hidden border border-[#fae8ff]">
                 <Palette className="absolute w-40 h-40 text-fuchsia-100 top-10 right-10" />
                 <div className="relative z-10 w-2/3 bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
@@ -189,23 +216,18 @@ const KasAIBuilder = () => {
           {/* Feature 5: Analytics */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Analytics to Analyze and Improve AI Agent Performance</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Analyze and Improve AI Performance</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Take the guesswork out with accurate and actionable insights, and find opportunities to improve bot performance. Enhance your agent performance by identifying low-performing agents and training them to drive revenue with excellent support.
+                Take the guesswork out with actionable insights, and find opportunities to improve bot performance. Monitor where the agent succeeds and where human escalation is frequently triggered.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
-              {/* Custom Tailwind Illustration */}
               <div className="relative w-full h-80 bg-[#fffbeb] rounded-3xl flex items-center justify-center overflow-hidden border border-[#fef3c7]">
                 <div className="relative z-10 flex items-end gap-4 h-40 border-b-2 border-amber-200 px-6">
                   <div className="w-12 bg-[#6039ea] rounded-t-sm h-16"></div>
                   <div className="w-12 bg-[#6039ea] rounded-t-sm h-24"></div>
                   <div className="w-12 bg-[#6039ea] rounded-t-sm h-12"></div>
-                  <div className="w-12 bg-[#6039ea] rounded-t-sm h-32 relative">
-                     <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-white px-3 py-1 rounded shadow-sm text-xs font-bold text-gray-800 border border-gray-100">
-                        +85%
-                     </div>
-                  </div>
+                  <div className="w-12 bg-[#6039ea] rounded-t-sm h-32 relative"></div>
                 </div>
                 <TrendingUp className="absolute w-32 h-32 text-amber-200/50 right-10 top-10" />
               </div>
@@ -223,7 +245,7 @@ const KasAIBuilder = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold mb-16 text-center">
-            The Most Easy-to-Use AI Agent Chatbot Builder
+            How to Build and Deploy Your AI Agent
           </motion.h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-10">
@@ -234,9 +256,9 @@ const KasAIBuilder = () => {
                 <span className="font-bold text-xl text-[#a58bff] group-hover:text-white">1</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-3">Sign-up With Kas newerax</h3>
+                <h3 className="text-xl font-bold mb-3">Request Kas newerax Access</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Signup with Kas newerax by clicking on <Link to="/signup" className="text-[#a58bff] underline hover:text-white">this link</Link> and enter the required details to create an account and complete the onboarding process.
+                  Join our pilot program by clicking on <Link to="/signup" className="text-[#a58bff] underline hover:text-white">this link</Link> and enter the required details to create an account and begin onboarding.
                 </p>
               </div>
             </motion.div>
@@ -247,9 +269,9 @@ const KasAIBuilder = () => {
                 <span className="font-bold text-xl text-[#a58bff] group-hover:text-white">2</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-3">Create AI Agent Chatbot</h3>
+                <h3 className="text-xl font-bold mb-3">Train the AI Agent</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Navigate to the 'AI Agent Integration' section on the left panel of the dashboard and click on Kas AI Builder. Instantly train chatbot on your website URLs, documents, and knowledge base with generative AI.
+                  Navigate to the AI Builder section on your dashboard. Supply the system with your public website URLs, safe documents, and knowledge base links to ground the AI in your data.
                 </p>
               </div>
             </motion.div>
@@ -260,9 +282,9 @@ const KasAIBuilder = () => {
                 <span className="font-bold text-xl text-[#a58bff] group-hover:text-white">3</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-3">Add AI Agent Chatbot to Website</h3>
+                <h3 className="text-xl font-bold mb-3">Deploy to Your Channels</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Copy the Javascript code from the install section under Settings and paste it above the closing body tag on the page you want the chat widget to appear.
+                  Copy the provided JavaScript snippet for your website, or configure webhooks to connect the agent to WhatsApp and other messaging platforms.
                 </p>
               </div>
             </motion.div>
@@ -273,9 +295,9 @@ const KasAIBuilder = () => {
                 <span className="font-bold text-xl text-[#a58bff] group-hover:text-white">4</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold mb-3">Activate the AI Agent Chatbot</h3>
+                <h3 className="text-xl font-bold mb-3">Configure Routing Rules</h3>
                 <p className="text-gray-300 text-sm leading-relaxed">
-                  Go to Conversation Rules and enable assign new conversations to the bot and select your newly configured bot from the dropdown.
+                  Go to Conversation Rules to set boundaries. Determine exactly when the AI should answer and when the conversation must be escalated to your human team.
                 </p>
               </div>
             </motion.div>
@@ -300,10 +322,10 @@ const KasAIBuilder = () => {
             Expand as confidence grows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/get-started" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Get Started
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
-            <Link to="/demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
+            <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
               See a Live Demo
             </Link>
           </div>

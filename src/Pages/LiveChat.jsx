@@ -36,21 +36,21 @@ const LiveChat = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <motion.div variants={fadeInUp} className="w-full lg:w-1/2 flex flex-col items-start text-left">
             <h1 className="text-[2.5rem] leading-[1.15] sm:text-5xl lg:text-[4.5rem] font-bold text-[#14142b] tracking-tight mb-6">
-              Provide Instant Support with Live Chat
+              Provide Instant Support with Unified Live Chat
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-xl mb-8">
-              Deliver your customers a personalized experience they deserve with the best Live Chat platform. Add it to your website and mobile apps in minutes to instantly boost customer engagement.
+              Deliver the personalized experience your customers deserve. Add our Live Chat module to your website and mobile apps to seamlessly combine human support with AI automation.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <Link to="/try-for-free" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center`}>
-                Try for Free
+              <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center shadow-sm`}>
+                Request Early Access
               </Link>
-              <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors text-center`}>
+              <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors text-center bg-white`}>
                 Book a Demo
               </Link>
             </div>
             <p className="mt-5 text-sm text-gray-400 font-medium">
-              30 days free trial . No credit card required .  
+              Currently in early access and pilot stage.  
             </p>
           </motion.div>
 
@@ -125,7 +125,7 @@ const LiveChat = () => {
         className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-24 max-w-3xl mx-auto">
-          Live Chat Features That Will Help You Win Customers For Life
+          Features That Help You Build Better Relationships
         </motion.h2>
 
         <div className="space-y-32">
@@ -135,7 +135,7 @@ const LiveChat = () => {
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
               <h3 className="text-2xl font-bold text-gray-900">Contextual Triggers</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Proactively engage with visitors with customizable messages on different pages and based on agent availability.
+                Proactively engage with website visitors using customizable messages based on the page they are viewing or current agent availability.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -166,9 +166,9 @@ const LiveChat = () => {
           {/* Feature 2: Real-Time Support (Shortcuts/Canned Responses) */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900">Real-Time Support</h3>
+              <h3 className="text-2xl font-bold text-gray-900">Real-Time Human Support</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Help your customers when they need a real human touch and win them for life.
+                Equip your agents with canned responses and AI assistance to handle escalations quickly when customers need a human touch.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -203,9 +203,9 @@ const LiveChat = () => {
           {/* Feature 3: Easy Integration */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900">Easy Integration</h3>
+              <h3 className="text-2xl font-bold text-gray-900">Simple Integration</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Add Live Chat to your website and mobile app in minutes and start engaging with your customers. No coding required!
+                Add the Kas newerax Live Chat module to your website and mobile apps securely. Connect it to your existing platform workflow with minimal technical effort.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -238,7 +238,7 @@ const LiveChat = () => {
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
               <h3 className="text-2xl font-bold text-gray-900">Customizable Chat Widget</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Make the chat widget your own by customizing the theme, logo, and colors. Spin it the way you want.
+                Make the chat widget match your brand identity by customizing the theme, logo, and brand colors within the dashboard settings.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -272,9 +272,9 @@ const LiveChat = () => {
           {/* Feature 5: Single Dashboard For All Conversations (Generic Icons Only) */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900">Single Dashboard For All Conversations</h3>
+              <h3 className="text-2xl font-bold text-gray-900">Unified Conversation Dashboard</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Manage all messages from different channels - Mobile Apps, Websites, WhatsApp, Facebook Messenger, Instagram, and others from one dashboard. Never miss a thing!
+                Manage interactions from your website, mobile apps, WhatsApp, and social channels from a single unified view. Never miss a customer inquiry.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -316,9 +316,9 @@ const LiveChat = () => {
           {/* Feature 6: Advanced Reporting */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900">Advanced Reporting</h3>
+              <h3 className="text-2xl font-bold text-gray-900">Actionable Reporting</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Powerful granular reporting to assess overall and individual performances. Make data-driven decisions to increase overall productivity.
+                Use granular reporting to assess overall volume and individual performance. Make data-driven decisions to optimize your support operation.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -368,10 +368,10 @@ const LiveChat = () => {
             Expand as confidence grows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/get-started" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Get Started
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
-            <Link to="/demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
+            <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
               See a Live Demo
             </Link>
           </div>

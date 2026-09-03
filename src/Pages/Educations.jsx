@@ -31,14 +31,14 @@ const Education = () => {
   };
 
   const faqs = [
-    "What is an AI agent for education?",
+    "What is an AI support agent for education?",
     "How does Kas newerax's education AI agent work?",
-    "How do AI agent benefit educational institutions?",
-    "What queries can the AI agent for education handle?",
-    "How quickly can we deploy the education AI agent?",
+    "How do AI agents benefit educational institutions?",
+    "What kind of queries can the AI agent handle?",
+    "How quickly can we deploy the AI agent?",
     "Does the AI agent support multiple languages for international students?",
-    "Can we customize the AI agent for our educational institution?",
-    "How secure is student data with Kas newerax's AI agent for education?"
+    "Can we customize the AI agent for our specific institution?",
+    "How secure is student data with Kas newerax's platform?"
   ];
 
   return (
@@ -51,23 +51,23 @@ const Education = () => {
       >
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <motion.div variants={fadeInUp} className="w-full lg:w-1/2 flex flex-col items-start text-left">
-            <p className="text-[#6039ea] font-bold text-sm mb-3 tracking-wide uppercase">AI Agent for Education</p>
+            <p className="text-[#6039ea] font-bold text-sm mb-3 tracking-wide uppercase">AI Support for Education</p>
             <h1 className="text-[2.5rem] leading-[1.15] sm:text-5xl lg:text-[4.5rem] font-bold text-[#14142b] tracking-tight mb-6">
-              AI agent built for schools, higher ed and ed-tech
+              AI support built for schools, higher ed and ed-tech
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-xl mb-8">
-              Provide instant, accurate support on admissions, courses, deadlines, and IT issues across web, WhatsApp, and mobile apps. Kas newerax integrates with your LMS and knowledge base, offers round-the-clock answers, and routes complex cases to faculty or staff.
+              Provide automated support for admissions, course FAQs, deadlines, and basic IT issues across web, WhatsApp, and mobile apps. Keep human staff in control by routing complex cases seamlessly.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <Link to="/try-for-free" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center`}>
-                Try for Free
+              <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center shadow-sm`}>
+                Request Early Access
               </Link>
               <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors text-center bg-white`}>
                 Book a Demo
               </Link>
             </div>
             <p className="mt-5 text-sm text-gray-400 font-medium">
-              30 days free trial . No credit card required . Rated 4.8 on G2
+              Currently in early access and pilot stage.
             </p>
           </motion.div>
 
@@ -114,7 +114,7 @@ const Education = () => {
         className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-24">
-          Elevate student support with AI agent for education
+          Elevate student support with automated AI workflows
         </motion.h2>
 
         <div className="space-y-32">
@@ -122,15 +122,15 @@ const Education = () => {
           {/* Feature 1: Automate queries */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Automate repetitive student queries with AI agent</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Automate repetitive student queries</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Streamline your communication and admissions processes with an AI agent for educational institutions that handles high volumes of inquiries instantly and accurately.
+                Streamline your communication processes with an AI agent that handles high volumes of routine inquiries instantly.
               </p>
               <ul className="space-y-4 pt-2">
                 {[
-                  "Instantly answer queries about admission deadlines, eligibility criteria, documents, and application status",
-                  "Troubleshoot login issues, LMS navigation (Moodle, Blackboard, Canvas), and guide students through step-by-step resolutions",
-                  "Automate responses related to tuition fees, scholarships, installment plans, financial aid, and payment deadlines"
+                  "Answer queries about admission deadlines, eligibility criteria, and document requirements",
+                  "Guide students through basic login troubleshooting and LMS navigation FAQs",
+                  "Automate standard responses related to fee structures, payment deadlines, and financial aid basic info"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-blue-600 flex-shrink-0 mt-0.5" />
@@ -157,7 +157,7 @@ const Education = () => {
                              <p className="text-[10px] font-bold text-blue-600">AI Assistant</p>
                           </div>
                           <p className="text-xs text-blue-900 leading-relaxed">
-                            The minimum GPA requirement for the MBA program is 3.0 on a 4.0 scale.
+                            Based on our guidelines, the minimum GPA requirement for the MBA program is 3.0 on a 4.0 scale.
                           </p>
                        </div>
                     </div>
@@ -169,15 +169,15 @@ const Education = () => {
           {/* Feature 2: Personalized experiences */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Deliver personalized experiences at scale</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Deliver contextual experiences at scale</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Connect your existing systems with Kas newerax's education AI agent to create hyper-personalized, contextual interactions for every student.
+                Use your existing knowledge base and FAQs to train Kas newerax's AI agent, creating relevant and contextual interactions for students.
               </p>
               <ul className="space-y-4 pt-2">
                 {[
-                  "Seamlessly integrate with any LMS (Moodle, Blackboard, Canvas) to launch faster",
-                  "Send smart reminders for exams, assignment deadlines, and grading policies",
-                  "Guide students to mental health resources, academic support services, and career counseling tools"
+                  "Connect with standard education platforms to fetch routine information",
+                  "Automate reminders for general exam periods, deadlines, and standard campus policies",
+                  "Help route students to the right mental health resources or academic support links"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#6039ea] flex-shrink-0 mt-0.5" />
@@ -190,15 +190,15 @@ const Education = () => {
               <div className="w-full h-80 bg-[#fdf4ff] rounded-3xl flex items-center justify-center border border-[#fae8ff] relative">
                  <div className="w-3/4 max-w-sm bg-white rounded-xl shadow-sm border border-gray-100 p-5 relative z-10">
                     <div className="flex items-center justify-between mb-4 border-b border-gray-100 pb-3">
-                       <span className="font-bold text-gray-800 text-sm">LMS Notification</span>
+                       <span className="font-bold text-gray-800 text-sm">System Notification</span>
                        <BookOpen className="w-4 h-4 text-fuchsia-500" />
                     </div>
                     <div className="space-y-3">
                        <div className="flex items-start gap-3 bg-fuchsia-50 p-3 rounded-lg border border-fuchsia-100">
                           <Calendar className="w-5 h-5 text-fuchsia-600 shrink-0 mt-0.5" />
                           <div>
-                             <p className="text-xs font-bold text-fuchsia-900">Assignment Reminder</p>
-                             <p className="text-[10px] text-fuchsia-700 mt-1">Your essay for History 101 is due tomorrow at 11:59 PM.</p>
+                             <p className="text-xs font-bold text-fuchsia-900">Deadline Query Response</p>
+                             <p className="text-[10px] text-fuchsia-700 mt-1">Based on the academic calendar, the final date for History 101 submissions is tomorrow.</p>
                           </div>
                        </div>
                     </div>
@@ -207,18 +207,18 @@ const Education = () => {
             </motion.div>
           </div>
 
-          {/* Feature 3: 24/7 Support */}
+          {/* Feature 3: Automated Support */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">24/7 AI agent support for students & faculty</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Automated support outside business hours</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Provide round-the-clock assistance across channels and languages using the latest AI models, built specifically for educational institutions.
+                Provide assistance across multiple channels using established AI models, built to support the specific needs of educational institutions.
               </p>
               <ul className="space-y-4 pt-2">
                 {[
-                  "Improve first response time by up to 99% with AI-based automation",
-                  "Train your AI agent using your own content including knowledge base articles, URLs, and help docs",
-                  "Maintain accuracy with custom prompts, content guardrails, and continuous improvement"
+                  "Reduce first response times by automating initial triage and routine answers",
+                  "Train your AI agent securely using your own public URLs and help docs",
+                  "Maintain accuracy with custom prompts, guardrails, and continuous monitoring"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-emerald-600 flex-shrink-0 mt-0.5" />
@@ -239,7 +239,7 @@ const Education = () => {
                     </div>
                  </div>
                  <div className="bg-white px-6 py-3 rounded-lg shadow-sm border border-gray-100">
-                    <span className="text-sm font-bold text-gray-800">Available across all timezones</span>
+                    <span className="text-sm font-bold text-gray-800">After-hours query handling</span>
                  </div>
               </div>
             </motion.div>
@@ -248,15 +248,15 @@ const Education = () => {
           {/* Feature 4: Human Handoff */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Smart human handoff when it matters the most</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Smart human handoff when it matters</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Let AI agent for education manage repetitive tasks, and hand off complex or sensitive queries to student support department with precision.
+                Let AI agents manage repetitive tasks, and cleanly hand off complex or sensitive queries to the correct student support department.
               </p>
               <ul className="space-y-4 pt-2">
                 {[
-                  "Route students to the right department or faculty member based on query type",
-                  "Monitor performance with built-in CSAT tools for live agents",
-                  "Improve resolution time by 80% and deliver empathetic support where it’s needed"
+                  "Route students to the right department or staff member based on query type",
+                  "Monitor AI agent performance and track resolution efficiency",
+                  "Help teams resolve requests faster by delivering context-rich escalations"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-orange-500 flex-shrink-0 mt-0.5" />
@@ -286,7 +286,7 @@ const Education = () => {
         </div>
       </motion.section>
 
-      {/* Stats Section (Cream Background) */}
+      {/* Stats Section (Factual outcomes, No fake percentages) */}
       <motion.section 
         initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
         variants={staggerContainer}
@@ -295,32 +295,32 @@ const Education = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
           <motion.div variants={fadeInUp} className="w-full lg:w-1/3">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              Drive Real Results with an AI Agent for Education
+              Drive Real Results with Automation
             </h2>
             <p className="text-sm text-gray-600 mb-6 leading-relaxed">
-              Kas newerax's AI agent for education helps universities, colleges, and edtech platforms automate student conversations across voice, email, and chat. Built with cutting-edge AI, it reduces support load, improves student satisfaction, and delivers measurable ROI.
+              Kas newerax's platform helps universities, colleges, and edtech platforms automate student conversations. Reduce repetitive support workload and help your human teams focus on what matters.
             </p>
-            <Link to="/try-for-free" className={`inline-block px-6 py-2.5 rounded-md ${bgPrimary} text-white font-semibold text-sm hover:bg-[#502cd1] transition-colors`}>
-              Try for Free
+            <Link to="/signup" className={`inline-block px-6 py-2.5 rounded-md ${bgPrimary} text-white font-semibold text-sm hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
           </motion.div>
           
           <motion.div variants={fadeInUp} className="w-full lg:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-6">
              <div className="flex flex-col items-center text-center">
                 <Clock className="w-10 h-10 text-green-700 mb-3" />
-                <p className="text-xs font-bold text-gray-900">80% Reduction in <br />Average Resolution Time</p>
+                <p className="text-xs font-bold text-gray-900">Faster Issue <br />Resolution Times</p>
              </div>
              <div className="flex flex-col items-center text-center">
                 <Coins className="w-10 h-10 text-green-700 mb-3" />
-                <p className="text-xs font-bold text-gray-900">50% Decrease in <br />Cost Per Resolution</p>
+                <p className="text-xs font-bold text-gray-900">Reduced Routine <br />Support Costs</p>
              </div>
              <div className="flex flex-col items-center text-center">
                 <Users className="w-10 h-10 text-green-700 mb-3" />
-                <p className="text-xs font-bold text-gray-900">70% Increase in <br />Customer Retention Rate</p>
+                <p className="text-xs font-bold text-gray-900">Higher Student <br />Engagement</p>
              </div>
              <div className="flex flex-col items-center text-center">
                 <ThumbsUp className="w-10 h-10 text-green-700 mb-3" />
-                <p className="text-xs font-bold text-gray-900">40% Increase in <br />CSAT</p>
+                <p className="text-xs font-bold text-gray-900">Improved Overall <br />Feedback Scores</p>
              </div>
           </motion.div>
         </div>
@@ -382,15 +382,15 @@ const Education = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold mb-16 text-center">
-            Easy-to-Use AI-Powered Support Automation
+            Platform Capabilities
           </motion.h2>
           
           <div className="flex flex-col lg:flex-row gap-6">
              {/* Left Large Card */}
              <motion.div variants={fadeInUp} className="w-full lg:w-1/3 bg-[#1e1642] p-8 rounded-2xl border border-white/10 flex flex-col">
-                <h3 className="text-xl font-bold mb-4">In Built Native Integration</h3>
+                <h3 className="text-xl font-bold mb-4">Core Integrations</h3>
                 <p className="text-gray-300 text-sm leading-relaxed mb-8 flex-grow">
-                  Kas newerax features native integration, eliminating the need for any manual coding or installation. You can seamlessly add Kas newerax AI to your existing workflow-even without any coding expertise.
+                  Kas newerax is built to connect with your existing workflows, aiming to reduce the need for heavy manual coding or difficult installations.
                 </p>
                 <div className="w-full h-48 bg-[#2d1b6e] rounded-xl flex items-center justify-center border border-white/10">
                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center">
@@ -402,21 +402,21 @@ const Education = () => {
              {/* Right Stacked Cards */}
              <div className="w-full lg:w-2/3 flex flex-col gap-6">
                 <motion.div variants={fadeInUp} className="bg-[#1e1642] p-6 rounded-2xl border border-white/10 flex flex-col justify-center">
-                   <h3 className="text-lg font-bold mb-2">24/7 Support</h3>
+                   <h3 className="text-lg font-bold mb-2">Automated Support</h3>
                    <p className="text-gray-300 text-sm leading-relaxed">
-                     Kas newerax offers round-the-clock support in over 100 languages, ensuring that whenever you face challenges or require a custom integration, our dedicated team is always available to assist you-no matter the time.
+                     Kas newerax supports multilingual conversational capabilities, ensuring routine student inquiries are handled efficiently, even outside standard hours.
                    </p>
                 </motion.div>
                 <motion.div variants={fadeInUp} className="bg-[#1e1642] p-6 rounded-2xl border border-white/10 flex flex-col justify-center">
-                   <h3 className="text-lg font-bold mb-2">Latest AI Models for Accuracy</h3>
+                   <h3 className="text-lg font-bold mb-2">Flexible AI Models</h3>
                    <p className="text-gray-300 text-sm leading-relaxed">
-                     Kas newerax utilizes cutting-edge AI models from OpenAI, Google Gemini, and Anthropic, allowing you to choose the perfect fit for your specific needs. Plus, our system automatically adapts to your content, eliminating the need for manual training.
+                     Our platform is designed to support leading AI models like OpenAI, Google Gemini, and Anthropic, allowing the system to adapt to your institution's specific content.
                    </p>
                 </motion.div>
                 <motion.div variants={fadeInUp} className="bg-[#1e1642] p-6 rounded-2xl border border-white/10 flex flex-col justify-center">
-                   <h3 className="text-lg font-bold mb-2">One Stop Solution for Support</h3>
+                   <h3 className="text-lg font-bold mb-2">Unified Support Workflow</h3>
                    <p className="text-gray-300 text-sm leading-relaxed">
-                     Kas newerax is an incredibly user-friendly support automation solution that consolidates conversations from phone, email, chat, and social media into a single platform. Businesses can effortlessly automate support across all these channels without any hassle.
+                     Kas newerax helps consolidate support conversations from multiple channels into one platform, keeping human agents in control of complex resolutions.
                    </p>
                 </motion.div>
              </div>
@@ -440,10 +440,10 @@ const Education = () => {
             Expand as confidence grows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/get-started" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Get Started
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
-            <Link to="/demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
+            <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
               See a Live Demo
             </Link>
           </div>

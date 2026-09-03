@@ -82,7 +82,7 @@ const AuthPage = () => {
         localStorage.setItem('kas_users', JSON.stringify(users));
 
         // Show Success Message requested by you
-        showToast("our Team review your request and connect with you on email and activate your account after verification", "success");
+        showToast("Our team will review your request and connect with you on email to activate your account after verification.", "success");
         
         // Optionally switch to login view and clear form
         setIsLoginView(true);
@@ -126,13 +126,12 @@ const AuthPage = () => {
          <div className="absolute top-0 right-0 w-96 h-96 bg-[#6039ea]/5 rounded-full blur-3xl"></div>
          
          <div className="relative z-10">
-         
 
             <h1 className="text-4xl font-bold text-[#14142b] tracking-tight leading-tight mb-6">
-              Automate customer conversations fast - without losing control or CSAT.
+              AI-powered customer support automation.
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed mb-12">
-              Join thousands of businesses using Kas newerax to deploy generative AI agents across web, mobile, and messaging apps.
+              Automate repetitive customer conversations across web, email, and messaging apps while keeping human agents in control.
             </p>
 
             <div className="space-y-8">
@@ -141,8 +140,8 @@ const AuthPage = () => {
                      <Bot className={`w-6 h-6 ${primaryColor}`} />
                   </div>
                   <div>
-                     <h3 className="text-base font-bold text-gray-900 mb-1">No-Code AI Builder</h3>
-                     <p className="text-sm text-gray-600 leading-relaxed">Train AI on your knowledge base, FAQs, and website in minutes without any engineering effort.</p>
+                     <h3 className="text-base font-bold text-gray-900 mb-1">Automate the Safe Stuff</h3>
+                     <p className="text-sm text-gray-600 leading-relaxed">Train AI on your knowledge base to resolve high-volume, repetitive queries instantly.</p>
                   </div>
                </div>
                <div className="flex items-start gap-4">
@@ -151,7 +150,7 @@ const AuthPage = () => {
                   </div>
                   <div>
                      <h3 className="text-base font-bold text-gray-900 mb-1">Seamless Human Handoff</h3>
-                     <p className="text-sm text-gray-600 leading-relaxed">Let AI resolve repetitive queries, and seamlessly route complex issues to human agents with full context.</p>
+                     <p className="text-sm text-gray-600 leading-relaxed">Let AI resolve routine requests and automatically route complex issues to your human support team.</p>
                   </div>
                </div>
                <div className="flex items-start gap-4">
@@ -159,13 +158,16 @@ const AuthPage = () => {
                      <ShieldCheck className={`w-6 h-6 ${primaryColor}`} />
                   </div>
                   <div>
-                     <h3 className="text-base font-bold text-gray-900 mb-1">Enterprise-Grade Security</h3>
-                     <p className="text-sm text-gray-600 leading-relaxed">SOC 2 & ISO 27001 aligned platform ensuring your customer data remains secure at all times.</p>
+                     <h3 className="text-base font-bold text-gray-900 mb-1">Security & Privacy Focus</h3>
+                     <p className="text-sm text-gray-600 leading-relaxed">Designed with security and compliance requirements in mind to protect your customer data.</p>
                   </div>
                </div>
             </div>
          </div>
-
+         
+         <div className="relative z-10 mt-auto pt-12">
+            <p className="text-xs text-gray-400 font-medium">Currently in early access and pilot stage.</p>
+         </div>
       </div>
 
       {/* Right Panel: Auth Form */}
@@ -183,12 +185,12 @@ const AuthPage = () => {
          >
             <div className="mb-10 text-center lg:text-left">
                <h2 className="text-3xl font-bold text-gray-900 mb-3">
-                 {isLoginView ? 'Welcome back' : 'Create your account'}
+                 {isLoginView ? 'Welcome back' : 'Request Early Access'}
                </h2>
                <p className="text-gray-500 text-sm">
                  {isLoginView 
                    ? 'Enter your details to access your workspace.' 
-                   : 'Start automating your customer support in minutes.'}
+                   : 'Join our pilot program to start automating your customer support.'}
                </p>
             </div>
 
@@ -210,7 +212,7 @@ const AuthPage = () => {
                            value={formData.fullName}
                            onChange={handleChange}
                            className="w-full pl-11 pr-4 py-3 bg-white border border-gray-200 rounded-lg focus:outline-none focus:border-[#6039ea] focus:ring-1 focus:ring-[#6039ea] transition-colors text-sm"
-                           placeholder="e.g. Alice Evans"
+                           placeholder="e.g. John Doe"
                          />
                       </div>
                    </div>
@@ -280,7 +282,7 @@ const AuthPage = () => {
                  type="submit"
                  className={`w-full py-3.5 mt-2 rounded-lg ${bgPrimary} text-white font-bold text-sm hover:bg-[#502cd1] transition-colors shadow-sm flex items-center justify-center gap-2`}
                >
-                 {isLoginView ? 'Sign In to Workspace' : 'Create Free Account'} <ArrowRight className="w-4 h-4" />
+                 {isLoginView ? 'Sign In to Workspace' : 'Submit Access Request'} <ArrowRight className="w-4 h-4" />
                </button>
 
             </form>
@@ -295,14 +297,14 @@ const AuthPage = () => {
                    }}
                    className="ml-2 font-bold text-[#6039ea] hover:underline focus:outline-none"
                  >
-                   {isLoginView ? 'Sign up for free' : 'Log in here'}
+                   {isLoginView ? 'Request Access' : 'Log in here'}
                  </button>
                </p>
             </div>
 
             {!isLoginView && (
                <p className="text-[10px] text-gray-400 text-center mt-8 px-4 leading-relaxed">
-                 By creating an account, you agree to Kas newerax's <Link to="/terms" className="underline hover:text-gray-600">Terms of Service</Link> and <Link to="/privacy" className="underline hover:text-gray-600">Privacy Policy</Link>.
+                 By submitting a request, you agree to Kas newerax's <Link to="/terms" className="underline hover:text-gray-600">Terms of Service</Link> and <Link to="/privacy" className="underline hover:text-gray-600">Privacy Policy</Link>.
                </p>
             )}
 

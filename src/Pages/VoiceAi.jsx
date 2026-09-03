@@ -55,7 +55,7 @@ const VoiceAI = () => {
     "Can voice AI be integrated into an existing call center system?",
     "What are the benefits of using call center AI?",
     "Are voice agents secure for handling sensitive customer data?",
-    "How accurate is a voice AI chatbot compared to human agents?",
+    "How does voice AI handle complex customer issues?",
     "How does voice AI improve customer experience in a call center?",
     "Can voice AI be used beyond customer service?"
   ];
@@ -71,28 +71,28 @@ const VoiceAI = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <motion.div variants={fadeInUp} className="w-full lg:w-1/2 flex flex-col items-start text-left">
             <h1 className="text-[2.5rem] leading-[1.15] sm:text-5xl lg:text-[4rem] font-bold text-[#14142b] tracking-tight">
-              Save 60% of Contact Center Costs with Voice AI
+              Reduce Contact Center Costs with Voice AI
             </h1>
             <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
-              Give customers intent-accurate and fast responses without affecting your budget.
+              Give customers fast, intent-driven responses while managing your support budget efficiently using our voice automation module.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <Link to="/try-for-free" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center`}>
-                Try for Free
+              <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center shadow-sm`}>
+                Request Early Access
               </Link>
               <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors text-center`}>
                 Book a Demo
               </Link>
             </div>
             <p className="mt-5 text-sm text-gray-400 font-medium">
-              30 days free trial . No credit card required .  
+              Currently in early access and pilot stage.  
             </p>
           </motion.div>
 
           {/* Interactive ROI Calculator */}
           <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
             <div className="bg-white rounded-2xl p-6 sm:p-8 border border-gray-200 shadow-sm max-w-md mx-auto lg:ml-auto">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Voice AI ROI Calculator</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Estimated Savings Calculator</h3>
               
               <div className="space-y-4 mb-6">
                 <div>
@@ -127,15 +127,15 @@ const VoiceAI = () => {
               <div className="bg-[#eef0ff] rounded-xl p-5 border border-[#d6dcff]">
                 <div className="space-y-2">
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600 font-medium">Current spend:</span>
+                    <span className="text-gray-600 font-medium">Estimated current spend:</span>
                     <span className="text-gray-900 font-bold">{formatCurrency(currentSpend)}/mo</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="text-gray-600 font-medium">Kas newerax cost:</span>
+                    <span className="text-gray-600 font-medium">Estimated AI cost:</span>
                     <span className="text-gray-900 font-bold">{formatCurrency(kasCost)}/mo</span>
                   </div>
                   <div className="pt-2 mt-2 border-t border-[#c6ceff] flex justify-between items-center">
-                    <span className="text-[#6039ea] font-bold text-lg">Savings:</span>
+                    <span className="text-[#6039ea] font-bold text-lg">Projected Savings:</span>
                     <span className="text-[#6039ea] font-bold text-lg">{formatCurrency(savings)}/mo</span>
                   </div>
                 </div>
@@ -152,7 +152,7 @@ const VoiceAI = () => {
         className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
         <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-24">
-          Resolve 40% of Incoming Calls in 30 Days
+          Resolve Routine Incoming Calls Instantly
         </motion.h2>
 
         <div className="space-y-32">
@@ -160,15 +160,15 @@ const VoiceAI = () => {
           {/* Feature 1: Accuracy */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Answer Customer Questions with 99.9% Accuracy</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Answer Customer Questions Consistently</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Our Voice AI recalls facts about your business and remembers all the relevant context to give accurate answers to your customers.
+                Our Voice AI model recalls facts about your business and uses relevant context to give consistent answers to your customers based on your documentation.
               </p>
               <ul className="space-y-4 pt-2">
                 {[
-                  "Train on URLs, Documents and Knowledge Base",
-                  "Ensure 24/7 support with voice AI-powered automation-provide real-time, human-like assistance without the need for live agents",
-                  "Resync and update whenever your policies change"
+                  "Train on secure URLs, internal documents, and knowledge bases",
+                  "Ensure automated voice support outside regular business hours",
+                  "Resync and update the AI agent whenever your policies change"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-gray-500 flex-shrink-0 mt-0.5" />
@@ -199,15 +199,15 @@ const VoiceAI = () => {
           {/* Feature 2: Human Latency / Speed */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Add Human Latency to AI Efficiency</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Combine Automation Speed with Human Escalation</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Voice AI that answers questions at the speed of your best agents.
+                Voice AI answers standard inquiries rapidly and escalates complex calls seamlessly to human agents.
               </p>
               <ul className="space-y-4 pt-2">
                 {[
-                  "Cutting-edge speech recognition",
-                  "Provide real-time information with APIs",
-                  "Compatible with 100+ global languages"
+                  "Advanced speech recognition capabilities",
+                  "Provide real-time information by connecting with basic APIs",
+                  "Compatible with multiple global languages for diverse customer bases"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-gray-500 flex-shrink-0 mt-0.5" />
@@ -237,15 +237,15 @@ const VoiceAI = () => {
           {/* Feature 3: CSAT and FCR */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Improve CSAT and FCR</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Focus on Improving CSAT and FCR</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Boost your Customer Satisfaction and First Contact Resolution Rates by automating repetitive L1 & L2 queries.
+                Improve your Customer Satisfaction and First Contact Resolution metrics by automating repetitive Level 1 queries.
               </p>
               <ul className="space-y-4 pt-2">
                 {[
-                  "Improve First Response Time by 90%",
-                  "Improve CSAT by 50% or more",
-                  "Improve FCR by 70%"
+                  "Reduce average wait times for customers",
+                  "Monitor metrics to continuously improve satisfaction scores",
+                  "Enable agents to focus on complex cases that improve First Contact Resolution"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-gray-500 flex-shrink-0 mt-0.5" />
@@ -259,16 +259,16 @@ const VoiceAI = () => {
               <div className="relative w-full h-80 bg-[#fdf4ff] rounded-3xl flex flex-col items-center justify-center overflow-hidden border border-[#fae8ff] p-8 gap-6">
                 <div className="w-full flex gap-4">
                    <div className="flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col gap-2">
-                      <span className="text-sm text-gray-500 font-medium">CSAT Score</span>
+                      <span className="text-sm text-gray-500 font-medium">CSAT Metric Focus</span>
                       <div className="flex items-end gap-2">
-                         <span className="text-3xl font-bold text-green-500">94%</span>
+                         <span className="text-xl font-bold text-green-500">Improving</span>
                          <Activity className="w-5 h-5 text-green-500 mb-1" />
                       </div>
                    </div>
                    <div className="flex-1 bg-white p-4 rounded-xl border border-gray-100 shadow-sm flex flex-col gap-2">
                       <span className="text-sm text-gray-500 font-medium">Resolution</span>
                       <div className="flex items-end gap-2">
-                         <span className="text-3xl font-bold text-[#6039ea]">Fast</span>
+                         <span className="text-xl font-bold text-[#6039ea]">Streamlined</span>
                          <Clock className="w-5 h-5 text-[#6039ea] mb-1" />
                       </div>
                    </div>
@@ -285,15 +285,15 @@ const VoiceAI = () => {
           {/* Feature 4: Secure Data */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Secure PII Data at Every Step</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Designed with Security in Mind</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                We maintain our safety standards so your customers stay safe.
+                We prioritize data privacy and security standards so your customer data remains protected during automated interactions.
               </p>
               <ul className="space-y-4 pt-2">
                 {[
-                  "HIPAA-Compliant",
-                  "GDPR-Compliant",
-                  "Compatible with 100+ global languages"
+                  "Designed considering data privacy best practices",
+                  "Built to support organizational compliance requirements",
+                  "Secure conversation logging and encrypted data transfer"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-gray-500 flex-shrink-0 mt-0.5" />
@@ -379,15 +379,15 @@ const VoiceAI = () => {
           </h2>
           <p className="text-lg text-gray-600 mb-10 leading-relaxed">
             You don't need to bet your entire support operation on AI.<br />
-            Start with the conversations that are safe to automate using an AI agent.<br />
+            Start with the conversations that are safe to automate.<br />
             Expand as confidence grows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/get-started" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Get Started
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
-            <Link to="/demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
-              See a Live Demo
+            <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
+              Book a Demo
             </Link>
           </div>
         </div>

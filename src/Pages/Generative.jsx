@@ -34,18 +34,18 @@ const GenerativeAI = () => {
   };
 
   const faqs = [
-    "How does a generative AI chatbot work?",
-    "What are the benefits of using a generative AI chatbot?",
-    "Can I integrate a generative AI chatbot with my existing CRM tools?",
-    "Is a generative AI chatbot suitable for my business?",
-    "Can the generative AI chatbot understand multiple languages?",
-    "How secure is the data shared with a generative AI chatbot?",
-    "Can I customize the generative AI chatbot for my business?",
-    "What industries can benefit from generative AI chatbots?",
-    "How long does it take to set up a generative AI chatbot with Kas newerax?",
-    "Can I measure the performance of my generative AI chatbot?",
-    "What is the cost of implementing a generative AI chatbot?",
-    "Do I need technical skills to manage a generative AI chatbot?"
+    "How does a generative AI support agent work?",
+    "What are the benefits of using an AI agent for customer service?",
+    "Can I connect the AI agent with my existing CRM tools?",
+    "Is a generative AI agent suitable for my growing business?",
+    "Can the AI agent understand multiple languages?",
+    "How secure is the data shared with the AI agent?",
+    "Can I customize the AI agent for my brand tone?",
+    "What industries can benefit from AI support agents?",
+    "How long does it take to deploy an AI agent with Kas newerax?",
+    "Can I measure the performance of my AI agent?",
+    "What is the cost of implementing an AI agent?",
+    "Do I need technical skills to manage the AI agent workflows?"
   ];
 
   return (
@@ -59,21 +59,21 @@ const GenerativeAI = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <motion.div variants={fadeInUp} className="w-full lg:w-1/2 flex flex-col items-start text-left">
             <h1 className="text-[2.5rem] leading-[1.15] sm:text-5xl lg:text-[3.5rem] font-bold text-[#14142b] tracking-tight">
-              Generative AI Chatbot <br /> for Customer Service
+              Generative AI Agents <br /> for Customer Service
             </h1>
             <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
-              Instantly resolve customer queries with generative AI-powered chatbot trained on your custom data. Deploy on websites, mobile apps, WhatsApp and more.
+              Resolve routine customer queries using AI support agents trained securely on your company knowledge. Deploy across web and messaging apps while keeping humans in control of escalations.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <Link to="/try-for-free" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center`}>
-                Try for Free
+              <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center shadow-sm`}>
+                Request Early Access
               </Link>
               <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors text-center`}>
                 Book a Demo
               </Link>
             </div>
             <p className="mt-5 text-sm text-gray-400 font-medium">
-              30 days free trial . No credit card required .  
+              Currently in early access and pilot stage.  
             </p>
           </motion.div>
 
@@ -82,10 +82,10 @@ const GenerativeAI = () => {
             <div className="bg-[#1e1345] rounded-3xl p-8 w-full aspect-[4/3] flex flex-col items-center justify-center relative overflow-hidden shadow-sm">
               <div className="absolute top-6 left-6 bg-[#35256e] p-3 rounded-lg flex items-center gap-3 border border-white/10">
                 <Database className="w-5 h-5 text-yellow-400" />
-                <span className="text-white text-sm font-medium">Train bot on your data</span>
+                <span className="text-white text-sm font-medium">Train AI on your data</span>
               </div>
               <div className="absolute bottom-10 right-6 bg-[#35256e] p-3 rounded-lg flex items-center gap-3 border border-white/10">
-                <span className="text-white text-sm font-medium">Deploy it on any platform</span>
+                <span className="text-white text-sm font-medium">Omnichannel deployment</span>
                 <Smartphone className="w-5 h-5 text-yellow-400" />
               </div>
               <Bot className="w-32 h-32 text-indigo-400 opacity-50" />
@@ -102,72 +102,68 @@ const GenerativeAI = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-20">
-            Scale your customer service with Generative AI-powered chatbot
+            Scale your customer service with AI-powered workflows
           </motion.h2>
 
           <div className="flex flex-col lg:flex-row items-center gap-16 mb-24">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900">Generative AI chatbot tailored to your knowledge sources</h3>
+              <h3 className="text-2xl font-bold text-gray-900">AI agents grounded in your knowledge sources</h3>
               <div className="space-y-4 pt-4">
                 <div className="flex items-start gap-3">
                   <LinkIcon className={`w-5 h-5 ${primaryColor} flex-shrink-0 mt-1`} />
-                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Website Content:</strong> Train the generative AI chatbot by simply entering your website URL</p>
+                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Website Content:</strong> Train the AI agent by securely scanning your public website URLs</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Database className={`w-5 h-5 ${primaryColor} flex-shrink-0 mt-1`} />
-                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Knowledge Base:</strong> Seamlessly train the AI chatbot on your existing knowledge base articles built on Zendesk Guide and Salesforce Knowledge</p>
+                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Knowledge Base:</strong> Connect the agent to your existing helpdesk documentation and FAQs</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <FileText className={`w-5 h-5 ${primaryColor} flex-shrink-0 mt-1`} />
-                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Document Support:</strong> Upload files like PDFs, docs, and spreadsheets to train the gen AI chatbot for accurate answers</p>
+                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Document Support:</strong> Upload safe reference files (PDFs, docs) to improve response accuracy</p>
                 </div>
               </div>
             </motion.div>
-            <motion.div variants={fadeInUp} className="w-full lg:w-1/2 bg-[#f4f5f8] rounded-2xl h-80 flex items-center justify-center border border-gray-100">
-               <img src={img1} alt="" />
+            <motion.div variants={fadeInUp} className="w-full lg:w-1/2 bg-[#f4f5f8] rounded-2xl h-80 flex items-center justify-center border border-gray-100 overflow-hidden">
+               <img src={img1} alt="AI Knowledge Training" className="w-full h-full object-cover opacity-90" />
             </motion.div>
           </div>
 
           {/* Feature 2: Customization */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16 mb-24">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900">Customize your Generative AI chatbot for accurate, on-brand responses</h3>
+              <h3 className="text-2xl font-bold text-gray-900">Customize your AI agent for safe, on-brand responses</h3>
               <ul className="space-y-4 pt-4 list-disc pl-5">
-                <li className="text-gray-700 leading-relaxed marker:text-[#6039ea]"><strong className="text-gray-900">Controlled Responses:</strong> Guide the chatbot to answer accurately in your brand tone using RAG and route unknown queries to human agents</li>
-                <li className="text-gray-700 leading-relaxed marker:text-[#6039ea]"><strong className="text-gray-900">Brand Alignment:</strong> Align the chatbot’s personality with brand guidelines and ensure responses cite trusted sources</li>
-                <li className="text-gray-700 leading-relaxed marker:text-[#6039ea]"><strong className="text-gray-900">Contextual Support:</strong> Use past interactions to deliver personalized, context-aware replies</li>
+                <li className="text-gray-700 leading-relaxed marker:text-[#6039ea]"><strong className="text-gray-900">Controlled Responses:</strong> Configure strict boundaries to ensure the AI routes unknown queries to human agents rather than guessing.</li>
+                <li className="text-gray-700 leading-relaxed marker:text-[#6039ea]"><strong className="text-gray-900">Brand Alignment:</strong> Align the agent’s personality with brand guidelines and ensure responses cite approved sources.</li>
+                <li className="text-gray-700 leading-relaxed marker:text-[#6039ea]"><strong className="text-gray-900">Contextual Handoff:</strong> When humans step in, they receive full conversation history to resolve issues smoothly.</li>
               </ul>
             </motion.div>
-            <motion.div variants={fadeInUp} className="w-full lg:w-1/2 bg-[#f4f5f8] rounded-2xl h-80 flex items-center justify-center border border-gray-100">
-               {/* <span className="text-gray-400 font-medium">Customization UI</span> */}
-                              <img src={img2} alt="" />
-
+            <motion.div variants={fadeInUp} className="w-full lg:w-1/2 bg-[#f4f5f8] rounded-2xl h-80 flex items-center justify-center border border-gray-100 overflow-hidden">
+               <img src={img2} alt="AI Customization" className="w-full h-full object-cover opacity-90" />
             </motion.div>
           </div>
 
-          {/* Feature 3: 24/7 Support */}
+          {/* Feature 3: Automated Support */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900">24/7 customer support with Generative AI chatbots</h3>
+              <h3 className="text-2xl font-bold text-gray-900">Automated support outside regular business hours</h3>
               <div className="space-y-4 pt-4">
                 <div className="flex items-start gap-3">
                   <MessageSquare className={`w-5 h-5 ${primaryColor} flex-shrink-0 mt-1`} />
-                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Omnichannel Support:</strong> Deliver human-like responses across websites, apps (iOS, Android, etc.), and platforms like WhatsApp, Messenger, and Telegram</p>
+                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Omnichannel Delivery:</strong> Provide consistent responses across web chat, mobile apps, and platforms like WhatsApp.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Settings className={`w-5 h-5 ${primaryColor} flex-shrink-0 mt-1`} />
-                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Smart Escalation:</strong> Route complex queries to agents while automating routine ones</p>
+                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Smart Escalation:</strong> Seamlessly route complex or sensitive queries to the right human support queue.</p>
                 </div>
                 <div className="flex items-start gap-3">
                   <Zap className={`w-5 h-5 ${primaryColor} flex-shrink-0 mt-1`} />
-                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Powerful LLMs:</strong> Use top models from OpenAI, Gemini, Anthropic, or integrate with Dialogflow, Watson, or Amazon Lex for accurate answers</p>
+                  <p className="text-gray-700 leading-relaxed"><strong className="text-gray-900">Multiple AI Providers:</strong> Built to support models from OpenAI, Anthropic, or Gemini depending on your preference.</p>
                 </div>
               </div>
             </motion.div>
-            <motion.div variants={fadeInUp} className="w-full lg:w-1/2 bg-[#f4f5f8] rounded-2xl h-80 flex items-center justify-center border border-gray-100">
-               {/* <span className="text-gray-400 font-medium">LLM Integrations UI</span> */}
-                              <img src={img3} alt="" />
-
+            <motion.div variants={fadeInUp} className="w-full lg:w-1/2 bg-[#f4f5f8] rounded-2xl h-80 flex items-center justify-center border border-gray-100 overflow-hidden">
+               <img src={img3} alt="Omnichannel AI" className="w-full h-full object-cover opacity-90" />
             </motion.div>
           </div>
         </div>
@@ -181,25 +177,25 @@ const GenerativeAI = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold mb-16 text-center max-w-3xl mx-auto">
-            4 Reasons to Choose Kas newerax's Generative AI-Powered Chatbot
+            4 Reasons to Choose Kas newerax for Support Automation
           </motion.h2>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <motion.div variants={fadeInUp} className="bg-[#1e1642] p-8 rounded-xl border border-white/10 hover:border-[#6039ea] transition-colors">
-              <h3 className="text-xl font-bold mb-4">Automate Routine Queries with Generative AI Chatbot</h3>
-              <p className="text-gray-300 leading-relaxed text-sm">Delegate over 80% of repetitive customer queries to your generative AI chatbot. It resolves issues instantly with AI-driven responses in your brand’s tone, freeing human agents to manage more complex cases.</p>
+              <h3 className="text-xl font-bold mb-4">Reduce Routine Support Workload</h3>
+              <p className="text-gray-300 leading-relaxed text-sm">Delegate repetitive customer queries to your AI agent. It resolves routine issues instantly, freeing human agents to manage more complex cases that require empathy.</p>
             </motion.div>
             <motion.div variants={fadeInUp} className="bg-[#1e1642] p-8 rounded-xl border border-white/10 hover:border-[#6039ea] transition-colors">
-              <h3 className="text-xl font-bold mb-4">Scale Personalized Support with Generative AI</h3>
-              <p className="text-gray-300 leading-relaxed text-sm">Offer hyper-personalized customer support with your generative AI chatbot, using CRM and ticketing system data to understand intent and deliver tailored resolutions.</p>
+              <h3 className="text-xl font-bold mb-4">Deliver Contextual Support</h3>
+              <p className="text-gray-300 leading-relaxed text-sm">Offer more relevant customer support with AI agents that understand conversation intent and deliver resolutions based strictly on your company's approved data.</p>
             </motion.div>
             <motion.div variants={fadeInUp} className="bg-[#1e1642] p-8 rounded-xl border border-white/10 hover:border-[#6039ea] transition-colors">
-              <h3 className="text-xl font-bold mb-4">Train Your Generative AI Chatbot with Multiple Knowledge Sources</h3>
-              <p className="text-gray-300 leading-relaxed text-sm">Quickly enhance your generative AI chatbot’s knowledge by linking it to websites, documents, and help center articles, ensuring it provides accurate answers from the most relevant sources.</p>
+              <h3 className="text-xl font-bold mb-4">Secure Knowledge Grounding</h3>
+              <p className="text-gray-300 leading-relaxed text-sm">Enhance your AI agent's capability by linking it securely to websites and help center articles, ensuring it provides accurate answers from verified sources.</p>
             </motion.div>
             <motion.div variants={fadeInUp} className="bg-[#1e1642] p-8 rounded-xl border border-white/10 hover:border-[#6039ea] transition-colors">
-              <h3 className="text-xl font-bold mb-4">Seamless Generative AI Chatbot Integration</h3>
-              <p className="text-gray-300 leading-relaxed text-sm">Easily integrate your generative AI chatbot with existing systems like Zendesk, Freshdesk, Zoho Desk, and more. Enable effortless ticket creation and management directly within the chatbot interface.</p>
+              <h3 className="text-xl font-bold mb-4">Unified Integration Layer</h3>
+              <p className="text-gray-300 leading-relaxed text-sm">Integrate your AI support workflow with your existing helpdesk tools. Enable effortless ticketing management and escalation directly within a single platform.</p>
             </motion.div>
           </div>
         </div>
@@ -264,16 +260,16 @@ const GenerativeAI = () => {
             Start Small. Prove Value. Scale Safely
           </h2>
           <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-            You don’t need to bet your entire support operation on AI.<br />
-            Start with the conversations that are safe to automate using an AI agent.<br />
+            You don't need to bet your entire support operation on AI.<br />
+            Start with the conversations that are safe to automate.<br />
             Expand as confidence grows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/get-started" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Get Started
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
-            <Link to="/demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
-              See a Live Demo
+            <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
+              Book a Demo
             </Link>
           </div>
         </div>

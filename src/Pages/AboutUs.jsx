@@ -33,27 +33,27 @@ const AboutUs = () => {
     {
       icon: HeartHandshake,
       title: "Human + AI Harmony",
-      desc: "We believe AI should empower people, not replace them. Our products balance automation with empathy."
+      desc: "We believe AI should empower people, not replace them. Our platform balances automation with empathy."
     },
     {
       icon: Eye,
       title: "Transparency Always",
-      desc: "We communicate openly-with our customers, partners, and team-because trust is built on honesty."
+      desc: "We communicate openly—with our customers, partners, and team—because trust is built on honesty."
     },
     {
       icon: Lightbulb,
       title: "Innovation with Purpose",
-      desc: "We constantly push boundaries in AI and automation, but always with the goal of solving real problems."
+      desc: "We constantly push boundaries in automation, but always with the goal of solving real support problems."
     },
     {
       icon: Zap,
       title: "Automation for Impact",
-      desc: "Efficiency is not just about speed; it's about freeing people to focus on what truly matters."
+      desc: "Efficiency is not just about speed; it's about freeing human agents to focus on what truly matters."
     },
     {
       icon: TrendingUp,
       title: "Relentless Improvement",
-      desc: "We never settle. Every interaction, every product update, every feature is an opportunity to do better."
+      desc: "We never settle. Every interaction, every update, every feature is an opportunity to do better."
     }
   ];
 
@@ -73,7 +73,7 @@ const AboutUs = () => {
           Making Customer Service Effortless with AI
         </motion.h1>
         <motion.p variants={fadeInUp} className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
-          A true AI-first customer service automation platform for businesses of all sizes.
+          An AI-powered customer support automation platform for growing businesses.
         </motion.p>
       </motion.section>
 
@@ -88,10 +88,10 @@ const AboutUs = () => {
              <h2 className="text-3xl font-bold text-gray-900 mb-6">About Kas newerax</h2>
              <div className="space-y-6 text-gray-600 text-lg leading-relaxed">
                 <p>
-                  Kas newerax is an AI-first customer service automation platform. With its AI agents, chatbots, live chat, help center, ticketing, and shared inbox features, it enables businesses to deliver instant, accurate, and personalized customer service across all channels.
+                  Kas newerax is an AI-powered customer-support automation SaaS platform. By combining AI support agents, knowledge-base grounding, omnichannel capabilities, and smart ticketing, we enable growing businesses to automate routine requests efficiently.
                 </p>
                 <p>
-                  Today, Kas newerax's AI agents are helping businesses scale their customer service across websites, web apps, mobile apps, WhatsApp, Telegram, Instagram, and all major messaging platforms.
+                  Today, Kas newerax's platform helps teams scale their customer service across websites, web apps, mobile apps, WhatsApp, and email, ensuring humans stay in control of complex escalations.
                 </p>
              </div>
           </motion.div>
@@ -115,13 +115,13 @@ const AboutUs = () => {
               Kas newerax was incorporated on 17th June, 2026 with a simple vision: to make customer service effortless with AI.
             </p>
             <p>
-              Founders Shahrukh and Kasim saw that non-technical people found it very difficult to build and deploy AI chatbots and AI agents to automate customer service. Most AI tools on the market were either scripted chatbots or simply failed to help customers effectively.
+              Founders Shahrukh and Kasim saw that non-technical people found it very difficult to build and deploy AI chatbots and AI agents to automate customer service. Most AI tools on the market were either rigid scripted chatbots or complex systems that failed to handle actual support workflows effectively.
             </p>
             <p>
-              That's when they built Kas newerax, a true no-code customer service automation platform where AI resolves basic repetitive queries and hands off complex tasks to a human support agent.
+              That's when they began building Kas newerax—a platform where AI resolves basic repetitive queries by connecting to company knowledge, and seamlessly hands off complex tasks to human support agents with full conversation context.
             </p>
             <p>
-              Kas newerax is one of India's first AI companies to be selected by Google for its AI first accelerator program. At Kas newerax, we're proud of how far we've come, but our mission remains the same: to empower businesses with AI that feels natural, personal, and always available.
+              At Kas newerax, we are currently in our early development and pilot stages. Our mission is to empower growing digital teams with automation that feels natural, personal, and always reliable.
             </p>
           </motion.div>
         </div>
@@ -256,11 +256,11 @@ const AboutUs = () => {
             Ready to transform your customer support?
           </h2>
           <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-            Join Kas newerax and start automating your repetitive queries with our AI-first platform today.
+            Join Kas newerax's early access program and start automating your repetitive queries with our platform today.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/try-for-free" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Try for Free
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
             <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
               Book a Demo

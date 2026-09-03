@@ -54,15 +54,15 @@ const OpenAIIntegration = () => {
               Build and deploy OpenAI-powered customer support AI agents across web, mobile, email, and messaging channels, all within Kas newerax.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <Link to="/try-for-free" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center`}>
-                Try for Free
+              <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center shadow-sm`}>
+                Request Early Access
               </Link>
               <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors text-center bg-white`}>
                 Book a Demo
               </Link>
             </div>
             <p className="mt-5 text-sm text-gray-400 font-medium">
-              30 days free trial . No credit card required .  
+              Currently in early access and pilot stage.  
             </p>
           </motion.div>
 
@@ -93,7 +93,7 @@ const OpenAIIntegration = () => {
         className="pb-20 pt-4 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
       >
         <h2 className="text-xl md:text-2xl font-bold text-gray-800">
-          No-code setup. Human handoff. Omnichannel deployment. Enterprise-ready security.
+          No-code setup. Human handoff. Omnichannel deployment. Built with security in mind.
         </h2>
       </motion.section>
 
@@ -108,10 +108,10 @@ const OpenAIIntegration = () => {
           {/* Feature 1: Infrastructure */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Go live faster with built-in infrustructure</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Go live faster with built-in infrastructure</h3>
               <ul className="space-y-5 pt-2">
                 {[
-                  "Build & deploy customer support AI agents powered by latest OpenAI models without managing complex infrastructure",
+                  "Build & deploy customer support AI agents powered by the latest OpenAI models without managing complex infrastructure",
                   "Track resolution rates, conversations, escalation trends, and AI performance",
                   "Connect APIs and workflows so the AI agent can fetch order status, create tickets, or trigger actions"
                 ].map((item, idx) => (
@@ -127,9 +127,9 @@ const OpenAIIntegration = () => {
                  <div className="flex flex-row items-center gap-8 w-full max-w-sm">
                     {/* Left Models Column */}
                     <div className="flex flex-col gap-4 w-1/2">
-                       <div className="bg-gray-200 text-gray-700 text-sm font-semibold py-3 px-4 rounded-full text-center shadow-sm">gpt-5.5</div>
-                       <div className="bg-gray-200 text-gray-700 text-sm font-semibold py-3 px-4 rounded-full text-center shadow-sm">gpt-5-mini</div>
-                       <div className="bg-gray-200 text-gray-700 text-sm font-semibold py-3 px-4 rounded-full text-center shadow-sm opacity-50">gpt-5-nano</div>
+                       <div className="bg-gray-200 text-gray-700 text-sm font-semibold py-3 px-4 rounded-full text-center shadow-sm">gpt-4o</div>
+                       <div className="bg-gray-200 text-gray-700 text-sm font-semibold py-3 px-4 rounded-full text-center shadow-sm">gpt-4o-mini</div>
+                       <div className="bg-gray-200 text-gray-700 text-sm font-semibold py-3 px-4 rounded-full text-center shadow-sm opacity-50">gpt-3.5-turbo</div>
                     </div>
                     {/* Right Metrics Column */}
                     <div className="flex flex-col gap-3 w-1/2">
@@ -198,11 +198,11 @@ const OpenAIIntegration = () => {
           {/* Feature 3: Omnichannel Support */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Provide 24/7 Omnichannel support with OpenAI agent built on Kas newerax</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Provide Omnichannel automated support with OpenAI agent built on Kas newerax</h3>
               <ul className="space-y-5 pt-2">
                 {[
-                  "Deploy OpenAI agent across websites, mobile apps, email, WhatsApp, Telegram, and messaging platforms from a single dashboard.",
-                  "Automatically transfer conversations to support agents when the customer requests it"
+                  "Deploy OpenAI agents across websites, mobile apps, email, and messaging platforms from a single dashboard.",
+                  "Automatically transfer conversations to human support agents when the customer requests it."
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-4">
                     <div className="w-1.5 h-1.5 rounded-full bg-gray-600 mt-2 shrink-0"></div>
@@ -267,7 +267,7 @@ const OpenAIIntegration = () => {
             <h2 className="text-3xl font-bold text-gray-900 mb-3">
               Frequently asked questions
             </h2>
-            <p className="text-gray-600">Everything you need to know about the product and billing.</p>
+            <p className="text-gray-600">Everything you need to know about the product and integration.</p>
           </motion.div>
           
           <motion.div variants={fadeInUp} className="space-y-2">
@@ -281,7 +281,7 @@ const OpenAIIntegration = () => {
                     {faq}
                   </span>
                   <div className={`w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 transition-colors`}>
-                    {openFaq === index ? <Minus className="w-5 h-5 text-gray-400" /> : <Plus className="w-5 h-5 text-gray-400" />}
+                    {openFaq === index ? <Minus className="w-5 h-5 text-[#6039ea]" /> : <Plus className="w-5 h-5 text-gray-400" />}
                   </div>
                 </button>
                 <AnimatePresence>
@@ -293,8 +293,8 @@ const OpenAIIntegration = () => {
                       transition={{ duration: 0.2 }}
                       className="overflow-hidden"
                     >
-                      <p className="pt-4 text-sm text-gray-600 leading-relaxed">
-                        Answers will be configured based on Kas newerax internal documentation. This section provides detailed context regarding {faq.toLowerCase()}
+                      <p className="pt-4 text-sm text-gray-600 leading-relaxed pr-8">
+                        Answers will be configured based on Kas newerax internal documentation. This section provides detailed context regarding your query.
                       </p>
                     </motion.div>
                   )}
@@ -321,10 +321,10 @@ const OpenAIIntegration = () => {
             Expand as confidence grows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/get-started" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Get Started
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
-            <Link to="/demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
+            <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
               See a Live Demo
             </Link>
           </div>

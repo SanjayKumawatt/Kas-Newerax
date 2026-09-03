@@ -40,21 +40,24 @@ const WhatsAppIntegration = () => {
           </motion.div>
 
           <motion.h1 variants={fadeInUp} className="text-[2.5rem] sm:text-5xl font-bold text-[#14142b] tracking-tight mb-6">
-            WhatsApp
+            WhatsApp Support Automation
           </motion.h1>
           
           <motion.p variants={fadeInUp} className="text-lg text-gray-600 leading-relaxed mb-10 max-w-3xl mx-auto">
-            WhatsApp AI Agent that resolves repetitive customer queries instantly - with rich responses like forms, lists, and quick replies - and knows exactly when to step aside and hand the conversation to a human.
+            A WhatsApp AI module that resolves repetitive customer queries instantly - securely grounded in your company knowledge - and knows exactly when to step aside and hand the conversation to a human team.
           </motion.p>
           
           <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/try-for-free" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Try for Free
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
             <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
               Book a Demo
             </Link>
           </motion.div>
+          <motion.p variants={fadeInUp} className="mt-5 text-sm text-gray-400 font-medium">
+            Currently in early access and pilot stage.
+          </motion.p>
         </motion.section>
       </div>
 
@@ -72,12 +75,12 @@ const WhatsAppIntegration = () => {
                <ul className="space-y-4">
                  <li>
                    <Link to="#" className="flex items-center justify-between text-sm font-bold text-[#6039ea] bg-[#eef0ff] px-4 py-3 rounded-lg">
-                     Overview <ArrowRight className="w-4 h-4" />
+                      Overview <ArrowRight className="w-4 h-4" />
                    </Link>
                  </li>
                  <li>
                    <Link to="/pricing" className="flex items-center justify-between text-sm font-medium text-gray-700 hover:text-[#6039ea] hover:bg-gray-50 px-4 py-3 rounded-lg transition-colors">
-                     View plans and pricing <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100" />
+                      View plans and pricing <ArrowRight className="w-4 h-4 opacity-0 group-hover:opacity-100" />
                    </Link>
                  </li>
 
@@ -89,11 +92,11 @@ const WhatsAppIntegration = () => {
           <motion.div variants={fadeInUp} className="w-full lg:w-3/4">
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Overview</h2>
             <p className="text-gray-600 leading-relaxed text-lg mb-12">
-              Enhance customer communication by integrating Kas newerax's AI Agent with your WhatsApp Business. Automate responses, provide instant support, and manage conversations effortlessly-all from a centralized dashboard.
+              Enhance customer communication by integrating Kas newerax's AI Agent with your WhatsApp Business workflow. Automate routine responses and manage complex human escalations effortlessly-all from a centralized dashboard.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mb-8">
-              Why Integrate Kas newerax AI Agent with Your WhatsApp Business?
+              Why Integrate Kas newerax with WhatsApp?
             </h2>
 
             <div className="space-y-6 mb-12">
@@ -102,8 +105,8 @@ const WhatsAppIntegration = () => {
                     <Zap className="w-6 h-6 text-purple-600" />
                  </div>
                  <div>
-                    <h4 className="text-lg font-bold text-gray-900 mb-2">Instant AI Training</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">Train the AI agent on your existing FAQs and business data for personalized, automated responses-no manual setup required.</p>
+                    <h4 className="text-lg font-bold text-gray-900 mb-2">Knowledge Base Training</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">Ground the AI agent on your existing secure documents and help center data for personalized, automated responses.</p>
                  </div>
               </div>
 
@@ -112,8 +115,8 @@ const WhatsAppIntegration = () => {
                     <Clock className="w-6 h-6 text-green-600" />
                  </div>
                  <div>
-                    <h4 className="text-lg font-bold text-gray-900 mb-2">24/7 Automated Assistance</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">Engage customers round-the-clock, reducing response time and improving satisfaction.</p>
+                    <h4 className="text-lg font-bold text-gray-900 mb-2">Automated Assistance</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">Engage customers quickly outside regular business hours, reducing average response time.</p>
                  </div>
               </div>
 
@@ -122,8 +125,8 @@ const WhatsAppIntegration = () => {
                     <Smartphone className="w-6 h-6 text-blue-600" />
                  </div>
                  <div>
-                    <h4 className="text-lg font-bold text-gray-900 mb-2">Enhanced Customer Experience</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">Deliver seamless interactions with real-time chat, proactive messaging, and personalized responses.</p>
+                    <h4 className="text-lg font-bold text-gray-900 mb-2">Consistent Customer Experience</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">Deliver seamless interactions with automated chat and proactive human handoff when required.</p>
                  </div>
               </div>
 
@@ -133,7 +136,7 @@ const WhatsAppIntegration = () => {
                  </div>
                  <div>
                     <h4 className="text-lg font-bold text-gray-900 mb-2">Centralized Management</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">Track and manage all customer queries in one place, ensuring consistent support across all channels.</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">Track and manage all WhatsApp customer queries in one place, ensuring consistent support alongside other channels.</p>
                  </div>
               </div>
 
@@ -142,16 +145,16 @@ const WhatsAppIntegration = () => {
                     <ShieldCheck className="w-6 h-6 text-teal-600" />
                  </div>
                  <div>
-                    <h4 className="text-lg font-bold text-gray-900 mb-2">Scalable & Secure</h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">Grow your business with a chatbot that scales with your needs while maintaining security and reliability.</p>
+                    <h4 className="text-lg font-bold text-gray-900 mb-2">Security by Design</h4>
+                    <p className="text-gray-600 text-sm leading-relaxed">Deploy a chatbot that handles data securely and respects compliance parameters as your conversation volume scales.</p>
                  </div>
               </div>
             </div>
 
             <div className="bg-[#eef0ff] border border-[#d6dcff] p-8 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-6">
-               <p className="text-lg font-bold text-[#6039ea] m-0">Start automating your WhatsApp conversations today with Kas newerax!</p>
-               <Link to="/get-started" className={`px-6 py-3 rounded-md ${bgPrimary} text-white font-semibold text-sm hover:bg-[#502cd1] transition-colors whitespace-nowrap`}>
-                 Get Started Now
+               <p className="text-lg font-bold text-[#6039ea] m-0">Start automating your WhatsApp conversations with Kas newerax!</p>
+               <Link to="/signup" className={`px-6 py-3 rounded-md ${bgPrimary} text-white font-semibold text-sm hover:bg-[#502cd1] transition-colors whitespace-nowrap shadow-sm`}>
+                 Request Access
                </Link>
             </div>
           </motion.div>
@@ -166,15 +169,15 @@ const WhatsAppIntegration = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold mb-16 text-center">
-            Easy-to-Use AI-Powered Support Automation
+            Platform Capabilities
           </motion.h2>
           
           <div className="flex flex-col lg:flex-row gap-6">
              {/* Left Large Card */}
              <motion.div variants={fadeInUp} className="w-full lg:w-1/3 bg-[#1e1642] p-8 rounded-2xl border border-white/10 flex flex-col">
-                <h3 className="text-xl font-bold mb-4">In Built Native Integration</h3>
+                <h3 className="text-xl font-bold mb-4">Core Integrations</h3>
                 <p className="text-gray-300 text-sm leading-relaxed mb-8 flex-grow">
-                  Kas newerax features native integration, eliminating the need for any manual coding or installation. You can seamlessly add Kas newerax AI to your existing workflow-even without any coding expertise.
+                  Kas newerax provides modular integrations, aiming to reduce the need for heavy manual coding or installations. Seamlessly add AI capabilities to your existing support workflows.
                 </p>
                 <div className="w-full h-48 bg-[#2d1b6e] rounded-xl flex items-center justify-center border border-white/10">
                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center">
@@ -186,21 +189,21 @@ const WhatsAppIntegration = () => {
              {/* Right Stacked Cards */}
              <div className="w-full lg:w-2/3 flex flex-col gap-6">
                 <motion.div variants={fadeInUp} className="bg-[#1e1642] p-6 rounded-2xl border border-white/10 flex flex-col justify-center">
-                   <h3 className="text-lg font-bold mb-2">24/7 Support</h3>
+                   <h3 className="text-lg font-bold mb-2">Automated Support</h3>
                    <p className="text-gray-300 text-sm leading-relaxed">
-                     Kas newerax offers round-the-clock support in over 100 languages, ensuring that whenever you face challenges or require a custom integration, our dedicated team is always available to assist you-no matter the time.
+                     Kas newerax offers automated support with multilingual capabilities, ensuring routine customer challenges are addressed efficiently even outside business hours.
                    </p>
                 </motion.div>
                 <motion.div variants={fadeInUp} className="bg-[#1e1642] p-6 rounded-2xl border border-white/10 flex flex-col justify-center">
-                   <h3 className="text-lg font-bold mb-2">Latest AI Models for Accuracy</h3>
+                   <h3 className="text-lg font-bold mb-2">Flexible AI Models</h3>
                    <p className="text-gray-300 text-sm leading-relaxed">
-                     Kas newerax utilizes cutting-edge AI models from OpenAI, Google Gemini, and Anthropic, allowing you to choose the perfect fit for your specific needs. Plus, our system automatically adapts to your content, eliminating the need for manual training.
+                     Kas newerax is built to support leading AI models from OpenAI, Google Gemini, and Anthropic, allowing you to choose the appropriate engine for your data.
                    </p>
                 </motion.div>
                 <motion.div variants={fadeInUp} className="bg-[#1e1642] p-6 rounded-2xl border border-white/10 flex flex-col justify-center">
-                   <h3 className="text-lg font-bold mb-2">One Stop Solution for Support</h3>
+                   <h3 className="text-lg font-bold mb-2">Unified Support Workflow</h3>
                    <p className="text-gray-300 text-sm leading-relaxed">
-                     Kas newerax is an incredibly user-friendly support automation solution that consolidates conversations from phone, email, chat, and social media into a single platform. Businesses can effortlessly automate support across all these channels without any hassle.
+                     Kas newerax helps consolidate support conversations from phone, email, web chat, and WhatsApp into a single platform for efficient resolution and escalation management.
                    </p>
                 </motion.div>
              </div>
@@ -224,10 +227,10 @@ const WhatsAppIntegration = () => {
             Expand as confidence grows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/get-started" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Get Started
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
-            <Link to="/demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
+            <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
               See a Live Demo
             </Link>
           </div>

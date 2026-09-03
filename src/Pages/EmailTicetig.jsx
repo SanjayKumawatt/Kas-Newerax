@@ -30,16 +30,15 @@ const EmailTicketing = () => {
   };
 
   const faqs = [
-    "What is an email ticketing system, and how does it work?",
-    "How does Kas newerax's AI-powered email ticketing system improve response times?",
-    "Can this email-based ticketing system handle multilingual queries?",
-    "What is a conversational IVR and how does it work?",
-    "What are the benefits of using an AI ticketing system for email support?",
+    "How does the Kas newerax email ticketing module work?",
+    "How does AI-powered email routing improve response times?",
+    "Can this email module handle multilingual queries?",
+    "What are the benefits of automating routine email support?",
     "How does the shared inbox feature improve team collaboration?",
-    "Can I integrate the email ticketing system with my existing tools?",
-    "How secure is Kas newerax's email ticketing system?",
-    "How does conversation summarization help in managing email tickets?",
-    "What kind of customer queries can be automated with this AI email ticketing system?"
+    "Can I connect the email ticketing module with my existing workflows?",
+    "How secure is Kas newerax's email processing?",
+    "How does conversation summarization help in managing tickets?",
+    "What kind of customer queries are safe to automate via email?"
   ];
 
   return (
@@ -53,21 +52,21 @@ const EmailTicketing = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <motion.div variants={fadeInUp} className="w-full lg:w-1/2 flex flex-col items-start text-left">
             <h1 className="text-[2.5rem] leading-[1.15] sm:text-5xl lg:text-[4rem] font-bold text-[#14142b] tracking-tight mb-6">
-              Automate Email Ticketing with Accurate Resolutions
+              Automate Email Ticketing with Accuracy
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-xl mb-8">
-              Automate and resolve repetitive incoming email queries with AI. Prioritize, assign, and escalate complex queries to support agents.
+              Resolve repetitive incoming email queries securely with AI. Prioritize, categorize, and escalate complex tickets to human support agents seamlessly.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <Link to="/try-for-free" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center`}>
-                Try for Free
+              <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center shadow-sm`}>
+                Request Early Access
               </Link>
-              <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors text-center`}>
+              <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors text-center bg-white`}>
                 Book a Demo
               </Link>
             </div>
             <p className="mt-5 text-sm text-gray-400 font-medium">
-              30 days free trial . No credit card required .  
+              Currently in early access and pilot stage.  
             </p>
           </motion.div>
 
@@ -134,7 +133,7 @@ const EmailTicketing = () => {
         className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-gray-50/50 rounded-3xl"
       >
         <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-20 max-w-3xl mx-auto leading-tight">
-          Deflect incoming tickets with Kas newerax's AI-powered email ticketing
+          Reduce routine ticket backlogs with Kas newerax's AI-powered email module
         </motion.h2>
 
         <div className="space-y-32">
@@ -142,9 +141,9 @@ const EmailTicketing = () => {
           {/* Feature 1 */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900 leading-tight">Say goodbye to email ticket backlogs with AI by your side</h3>
+              <h3 className="text-2xl font-bold text-gray-900 leading-tight">Handle routine emails securely with AI by your side</h3>
               <p className="text-gray-600 leading-relaxed text-base">
-                Connect your support email to Kas newerax's intuitive dashboard for seamless management of email ticket queries and optimized ticket backlogs. AI resolves repetitive customer queries automatically, using your FAQs, support documents, and help center articles, all while maintaining your brand tone.
+                Connect your support email to Kas newerax's unified dashboard for seamless management of incoming queries. AI resolves repetitive customer questions securely using your grounded FAQs and help center articles, maintaining your specific brand tone.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -160,7 +159,7 @@ const EmailTicketing = () => {
                   </div>
                   <div className="mt-4 p-3 bg-[#fdf4ff] rounded-lg border border-[#fae8ff] flex items-start gap-2">
                      <Sparkles className="w-4 h-4 text-fuchsia-500 mt-0.5 shrink-0" />
-                     <p className="text-xs text-fuchsia-900 font-medium leading-relaxed">Kas AI generated a response using the Returns Policy Document.</p>
+                     <p className="text-xs text-fuchsia-900 font-medium leading-relaxed">Kas AI generated a response using your secure Returns Policy Document.</p>
                   </div>
                 </div>
               </div>
@@ -170,9 +169,9 @@ const EmailTicketing = () => {
           {/* Feature 2 */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900 leading-tight">Don’t let language be a barrier to your email support</h3>
+              <h3 className="text-2xl font-bold text-gray-900 leading-tight">Don't let language be a barrier to your email support</h3>
               <p className="text-gray-600 leading-relaxed text-base">
-                Automate response to email queries in more than 100 languages with Kas newerax's dynamic language translations, ensuring personalized communication for your diverse customer base.
+                Automate responses to email queries with multilingual capabilities. Kas newerax helps ensure personalized and accurate communication for your diverse customer base.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -199,22 +198,22 @@ const EmailTicketing = () => {
           {/* Feature 3 */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900 leading-tight">Make better decisions with AI-powered insights</h3>
+              <h3 className="text-2xl font-bold text-gray-900 leading-tight">Empower teams with actionable email insights</h3>
               <p className="text-gray-600 leading-relaxed text-base">
-                Get actionable insights at a glance. Kas newerax's Insights and Summarization feature provides indepth analysis of every ticket with sentiment analysis, and key highlights of email conversations, helping your team to make informed decision and resolve queries faster and smarter.
+                Review ticket metrics at a glance. Kas newerax provides analysis of email conversations, including sentiment markers and thread highlights, helping your human agents escalate and resolve priority queries efficiently.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
               <div className="w-full h-72 bg-[#fffbeb] rounded-2xl flex flex-col items-center justify-center p-6 border border-[#fef3c7]">
                 <div className="w-full bg-white rounded-xl shadow-sm border border-gray-100 p-5 flex flex-col gap-4">
                    <div className="flex items-center justify-between">
-                     <h4 className="text-xs font-bold text-gray-800 uppercase">Sentiment Analysis</h4>
+                     <h4 className="text-xs font-bold text-gray-800 uppercase">Sentiment Indicator</h4>
                      <span className="text-[10px] font-bold text-amber-600 bg-amber-50 px-2 py-1 rounded">Frustrated ↘</span>
                    </div>
                    <div>
                      <h4 className="text-xs font-bold text-gray-800 uppercase mb-2">AI Summary</h4>
                      <p className="text-xs text-gray-600 bg-gray-50 p-2 rounded leading-relaxed border border-gray-100">
-                       Customer has followed up three times regarding a delayed shipping issue. Expedited handling is recommended.
+                       Customer has followed up twice regarding a delayed shipping issue. Human review recommended.
                      </p>
                    </div>
                 </div>
@@ -225,9 +224,9 @@ const EmailTicketing = () => {
           {/* Feature 4 */}
           <div className="flex flex-col lg:flex-row-reverse items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900 leading-tight">Upgrade your agents to AI-powered human agents</h3>
+              <h3 className="text-2xl font-bold text-gray-900 leading-tight">Assist human agents with contextual suggestions</h3>
               <p className="text-gray-600 leading-relaxed text-base">
-                Supercharge your support agents with AI-powered suggestions, writing tools, and access to knowledge base. Quickly fetch answers from hundreds of support documents, enabling agents to deliver accurate resolutions faster. Agent Assist will provide suggestions on improving the answers with the right grammar and tone.
+                Support your team with AI-driven drafting tools. When human agents take over, they can quickly fetch answers from your documentation and use AI suggestions to maintain grammar and brand tone.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -240,7 +239,7 @@ const EmailTicketing = () => {
                    <div className="mt-3 bg-[#eef0ff] p-3 rounded-lg border border-[#d6dcff]">
                      <div className="flex items-center gap-2 mb-2">
                        <Sparkles className="w-3 h-3 text-[#6039ea]" />
-                       <span className="text-[10px] font-bold text-[#6039ea] uppercase">Kas AI Rewrite Suggestion</span>
+                       <span className="text-[10px] font-bold text-[#6039ea] uppercase">Kas AI Suggestion</span>
                      </div>
                      <p className="text-xs text-[#6039ea] leading-relaxed">
                        "We sincerely apologize for the delay. Your package is scheduled to arrive tomorrow."
@@ -255,9 +254,9 @@ const EmailTicketing = () => {
           {/* Feature 5 */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900 leading-tight">AI for the public. Human support agents for your premium customers</h3>
+              <h3 className="text-2xl font-bold text-gray-900 leading-tight">AI for routine tickets, human agents for complex issues</h3>
               <p className="text-gray-600 leading-relaxed text-base">
-                Seamlessly transfer unresolved complex email ticket queries from AI to support live agents. Ensure every customer concern is addressed with the perfect blend of automation and human empathy.
+                Seamlessly transfer unresolved or sensitive email tickets from the AI module to your live agents. Ensure every customer concern is addressed with the right level of empathy and expertise.
               </p>
             </motion.div>
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2">
@@ -345,11 +344,11 @@ const EmailTicketing = () => {
             Expand as confidence grows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/get-started" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Get Started
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
-            <Link to="/demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
-              See a Live Demo
+            <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
+              Book a Demo
             </Link>
           </div>
         </div>

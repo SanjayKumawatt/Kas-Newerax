@@ -98,16 +98,8 @@ const Header = () => {
             icon: GraduationCap,
             to: '/education'
         },
-        {
-            name: 'Banking',
-            icon: Landmark,
-            to: '/banking'
-        },
-        {
-            name: 'e-Commerce',
-            icon: ShoppingCart,
-            to: '/e-commerce'
-        }
+        
+        
     ];
 
     const integrations = [
@@ -211,13 +203,13 @@ const Header = () => {
                                         className="absolute left-1/2 -translate-x-1/2 top-full mt-[-10px] w-[600px] max-w-[90vw] bg-white rounded-xl shadow-[0_10px_40px_-10px_rgba(0,0,0,0.1)] border border-gray-50 overflow-hidden flex"
                                     >
 
-                                        {/* PRODUCTS */}
+                                        {/* PLATFORM MODULES (Replaced Products with Platform) */}
                                         <div className="w-1/2 p-6 bg-white border-r border-gray-50">
 
                                             <h3
                                                 className={`text-sm font-semibold ${themeColor} mb-4 uppercase tracking-wider`}
                                             >
-                                                Products
+                                                Platform
                                             </h3>
 
                                             <ul className="space-y-4">
@@ -492,11 +484,12 @@ const Header = () => {
                             Book a Demo
                         </Link>
 
+                        {/* Changed from "Try for Free" to "Request Early Access" to align with early stage */}
                         <Link
-                            to="/try-for-free"
+                            to="/signup"
                             className={`px-4 xl:px-5 py-2.5 rounded-md ${bgThemeColor} text-white font-semibold text-sm hover:bg-[#502cd1] transition-colors shadow-sm whitespace-nowrap`}
                         >
-                            Try for Free
+                            Request Early Access
                         </Link>
 
                     </div>
@@ -594,13 +587,13 @@ const Header = () => {
 
                                             <div className="pb-3 pl-3 pr-1">
 
-                                                {/* PRODUCTS */}
+                                                {/* PLATFORM */}
                                                 <div className="rounded-xl bg-gray-50 p-3 mb-2">
 
                                                     <p
                                                         className={`px-2 pb-2 pt-1 text-xs font-bold uppercase tracking-wider ${themeColor}`}
                                                     >
-                                                        Products
+                                                        Platform
                                                     </p>
 
                                                     <div className="space-y-1">
@@ -907,11 +900,11 @@ const Header = () => {
                                 </Link>
 
                                 <Link
-                                    to="/try-for-free"
+                                    to="/signup"
                                     onClick={closeMobileMenu}
                                     className={`text-center w-full py-3 rounded-lg ${bgThemeColor} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}
                                 >
-                                    Try for Free
+                                    Request Early Access
                                 </Link>
 
                             </div>

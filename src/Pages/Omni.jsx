@@ -40,9 +40,17 @@ const Omnichannel = () => {
               Customers in their Favorite <br />
               Messaging Apps
             </h1>
-            <Link to="/try-for-free" className={`px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Try for Free
-            </Link>
+            <p className="text-lg text-gray-300 leading-relaxed max-w-xl mb-8">
+              Manage all your customer conversations from one unified platform. Connect your website, WhatsApp, and social channels without losing context.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+              <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center shadow-sm`}>
+                Request Early Access
+              </Link>
+            </div>
+            <p className="mt-5 text-sm text-gray-400 font-medium">
+              Currently in early access and pilot stage.
+            </p>
           </motion.div>
 
           {/* Hero Custom Graphic (Orbit style) without specific social icons */}
@@ -79,8 +87,8 @@ const Omnichannel = () => {
         variants={staggerContainer}
         className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
       >
-        <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16">
-          Deploy AI Chatbot Across Messaging Apps in 5 Mins
+        <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-16 max-w-3xl mx-auto">
+          Deploy AI Chatbots Across Messaging Apps Seamlessly
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-4xl mx-auto">
@@ -92,7 +100,7 @@ const Omnichannel = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">WhatsApp</h3>
             <p className="text-gray-600 leading-relaxed text-sm flex-grow mb-8">
-              Connect your WhatsApp Business account to Kas newerax to manage chats, and support customers effortlessly.
+              Connect your WhatsApp Business account to Kas newerax to manage chats, automate routine questions, and support customers effortlessly.
             </p>
             
           </motion.div>
@@ -102,9 +110,9 @@ const Omnichannel = () => {
             <div className="w-12 h-12 rounded-2xl bg-blue-100 flex items-center justify-center mb-6">
               <Users className="w-6 h-6 text-blue-600" />
             </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Facebook</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Facebook Messenger</h3>
             <p className="text-gray-600 leading-relaxed text-sm flex-grow mb-8">
-              Integrate Facebook Messenger with Kas newerax to automate support, and engage customers 24/7.
+              Integrate Facebook Messenger with Kas newerax to automate initial support and route complex queries to your human team.
             </p>
             
           </motion.div>
@@ -116,7 +124,7 @@ const Omnichannel = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Instagram</h3>
             <p className="text-gray-600 leading-relaxed text-sm flex-grow mb-8">
-              Automate Instagram Direct Messages via Kas newerax to offer instant, AI-powered responses and support.
+              Automate Instagram Direct Messages via Kas newerax to offer instant, AI-powered responses and capture lead information securely.
             </p>
             
           </motion.div>
@@ -128,7 +136,7 @@ const Omnichannel = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Telegram</h3>
             <p className="text-gray-600 leading-relaxed text-sm flex-grow mb-8">
-              Link Telegram with Kas newerax to receive, manage, and respond to messages from one unified dashboard.
+              Link Telegram with Kas newerax to receive, manage, and respond to messages from one unified dashboard alongside other channels.
             </p>
             
           </motion.div>
@@ -140,7 +148,7 @@ const Omnichannel = () => {
             </div>
             <h3 className="text-xl font-bold text-gray-900 mb-3">Line</h3>
             <p className="text-gray-600 leading-relaxed text-sm flex-grow mb-8">
-              Integrate Line with Kas newerax to manage, reply, and automate customer chats in real time.
+              Integrate Line with Kas newerax to manage, reply, and automate customer chats in real-time, keeping your global audiences engaged.
             </p>
             
           </motion.div>
@@ -155,7 +163,7 @@ const Omnichannel = () => {
         className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-gray-100"
       >
         <motion.h2 variants={fadeInUp} className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-20 max-w-4xl mx-auto">
-          Install Anywhere & Connect With Your Favorite Services
+          Centralize Your Workflows with Integrated Channels
         </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
@@ -174,9 +182,9 @@ const Omnichannel = () => {
                    <div className="absolute right-0 translate-x-1/2 bg-white p-3 rounded-full shadow-sm border border-gray-100"><LayoutTemplate className="w-6 h-6 text-purple-500" /></div>
                 </div>
              </div>
-             <h3 className="text-2xl font-bold text-gray-900 mb-4">Easily integrate across all your platforms</h3>
+             <h3 className="text-2xl font-bold text-gray-900 mb-4">Easily unify your digital presence</h3>
              <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
-               Use powerful web and WordPress plugins, dedicated Android, iOS, and hybrid mobile SDKs to get your support system up and running. Deploy chatbots and live chat to Facebook, WhatsApp, and Line easily.
+               Deploy chatbots and live chat modules to your website, WhatsApp, and social media platforms. Provide a consistent customer support experience regardless of where the conversation begins.
              </p>
              
           </motion.div>
@@ -204,9 +212,9 @@ const Omnichannel = () => {
                    <div className="absolute bottom-[20%] right-[20%] bg-white p-3 rounded-lg shadow-sm border border-gray-100"><Database className="w-6 h-6 text-sky-500" /></div>
                 </div>
              </div>
-             <h3 className="text-2xl font-bold text-gray-900 mb-4">Use Kas newerax with your favorite apps</h3>
+             <h3 className="text-2xl font-bold text-gray-900 mb-4">Connect with your favorite services</h3>
              <p className="text-gray-600 text-sm leading-relaxed mb-6 flex-grow">
-               Do more with Kas newerax by connecting your favorite tools and seamlessly transfer data between them. Easily integrate with Facebook, WhatsApp, Line, Zapier, CRMs, and more apps.
+               Do more with Kas newerax by securely connecting your existing CRM and ticketing tools. Effortlessly transfer customer context to ensure your human agents have all the information they need to solve issues quickly.
              </p>
              
           </motion.div>
@@ -230,10 +238,10 @@ const Omnichannel = () => {
             Expand as confidence grows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/get-started" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Get Started
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
-            <Link to="/demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
+            <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
               See a Live Demo
             </Link>
           </div>

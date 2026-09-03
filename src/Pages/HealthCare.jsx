@@ -4,9 +4,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   HeartPulse, CalendarDays, MessageSquare, ShieldCheck, 
   Stethoscope, Bot, User, ArrowRightLeft, FileText, 
-  Clock, Coins, Users, ThumbsUp, Plus, Minus, CheckCircle2,
-  Globe2, Smartphone,
-  Code2
+  Clock, Activity, Users, ThumbsUp, Plus, Minus, CheckCircle2,
+  Globe2, Smartphone, Code2
 } from 'lucide-react';
 
 const fadeInUp = {
@@ -33,14 +32,14 @@ const Healthcare = () => {
   };
 
   const faqs = [
-    "What is a healthcare chatbot?",
-    "How can AI chatbots improve patient engagement?",
-    "Is the healthcare chatbot secure and HIPAA-compliant?",
-    "Can the chatbot integrate with my existing hospital or clinic system?",
-    "What languages does the healthcare chatbot support?",
-    "How does a healthcare chatbot reduce operational costs?",
-    "Can patients talk to a live agent if needed?",
-    "Does the chatbot offer voice-based support for elderly patients?"
+    "What is a healthcare support AI agent?",
+    "How can AI agents improve patient engagement?",
+    "How does Kas newerax handle healthcare data security and privacy?",
+    "Can the AI agent integrate with my existing hospital or clinic system?",
+    "What languages does the healthcare AI agent support?",
+    "How does automated support reduce operational workload?",
+    "Can patients talk to a human agent if needed?",
+    "Does the platform offer voice-based support for elderly patients?"
   ];
 
   return (
@@ -54,21 +53,21 @@ const Healthcare = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
           <motion.div variants={fadeInUp} className="w-full lg:w-1/2 flex flex-col items-start text-left">
             <h1 className="text-[2.5rem] leading-[1.15] sm:text-5xl lg:text-[4rem] font-bold text-[#14142b] tracking-tight mb-6">
-              Boost Patient Care with AI Agent for Healthcare
+              Boost Patient Care with AI Support Automation
             </h1>
             <p className="text-lg text-gray-600 leading-relaxed max-w-xl mb-8">
-              Healthcare AI agent for appointment scheduling, telemedicine, preventive care, lab tests, insurance support, and patient feedback. Provides 24/7 seamless patient support across all channels.
+              Automate routine healthcare queries like appointment scheduling, preventive care FAQs, and lab test inquiries. Provide seamless patient support across all channels while keeping your human team in control of complex cases.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-              <Link to="/try-for-free" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center`}>
-                Try for Free
+              <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center shadow-sm`}>
+                Request Early Access
               </Link>
               <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors text-center bg-white`}>
                 Book a Demo
               </Link>
             </div>
             <p className="mt-5 text-sm text-gray-400 font-medium">
-              30 days free trial . No credit card required .  
+              Currently in early access and pilot stage.  
             </p>
           </motion.div>
 
@@ -123,18 +122,18 @@ const Healthcare = () => {
 
         <div className="space-y-32">
           
-          {/* Feature 1: 24/7 Support */}
+          {/* Feature 1: Automated Support */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">24/7 Seamless Support for Your Patients</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Seamless Patient Support</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
                 Providing exceptional customer service in healthcare is essential for ensuring patient satisfaction and trust. From appointment scheduling to real-time assistance, a well-structured support system enhances patient experiences and streamlines operations.
               </p>
               <ul className="space-y-4 pt-2">
                 {[
-                  "Streamline appointment scheduling, cancelling, rescheduling, enquiry on report status",
-                  "Ensure healthcare customer service is available 24/7 without human involvement-yet in a human-like way with the most advanced LLMs",
-                  "Assist patients with customer service in healthcare industry including medication management, FAQs, and more"
+                  "Streamline appointment scheduling, cancelling, rescheduling, and basic report inquiries",
+                  "Ensure healthcare customer service is available outside business hours with advanced LLMs",
+                  "Assist patients with routine healthcare customer service tasks, including guided FAQs"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#6039ea] flex-shrink-0 mt-0.5" />
@@ -164,7 +163,7 @@ const Healthcare = () => {
                  <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-sm border border-gray-100 flex items-center gap-3">
                     <Clock className="w-8 h-8 text-[#6039ea]" />
                     <div>
-                       <p className="text-sm font-bold text-gray-900">24/7 Access</p>
+                       <p className="text-sm font-bold text-gray-900">Always On</p>
                        <p className="text-xs text-gray-500">Automated Desk</p>
                     </div>
                  </div>
@@ -177,13 +176,13 @@ const Healthcare = () => {
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Provide Omnichannel Customer Service in Healthcare</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Boost your CSAT by assisting patients on their preferred communication channels with hyper-personalization with seamless customer service in healthcare industry.
+                Boost your CSAT by assisting patients on their preferred communication channels with hyper-personalization and seamless service.
               </p>
               <ul className="space-y-4 pt-2">
                 {[
-                  "Effortlessly connect your healthcare ERP with Kas newerax for fetching real-time information",
-                  "Offer healthcare customer service over calls, web, mobile, and many more",
-                  "Support patients in 100+ local languages, ensuring inclusive customer service in healthcare for diverse patient needs."
+                  "Effortlessly connect your healthcare systems with Kas newerax for fetching real-time routine information",
+                  "Offer healthcare customer service over web, mobile, and messaging platforms",
+                  "Support patients with multilingual capabilities, ensuring inclusive customer service for diverse patient needs."
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#6039ea] flex-shrink-0 mt-0.5" />
@@ -216,15 +215,15 @@ const Healthcare = () => {
           {/* Feature 3: Contextual AI */}
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Contextual AI Responses for Healthcare Customer Service</h3>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Contextual AI Responses for Healthcare</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Kas newerax leverages the latest LLMs from OpenAI, Anthropic, and Google Gemini to train the AI with minimal hallucinations and maximum accuracy.
+                Kas newerax leverages the latest LLMs to train the AI on your specific guidelines, maintaining accuracy and minimizing hallucinations.
               </p>
               <ul className="space-y-4 pt-2">
                 {[
-                  "Train AI agent with the data from hospital guidelines, helpcenter articles, and other documents for precise healthcare customer service",
-                  "Use custom prompts to ensure AI aligns with your brand tone, enhancing customer service in the healthcare industry",
-                  "Guardrails for minimal hallucination when the AI is trained exclusively on your data"
+                  "Train AI agent with data from your hospital guidelines, helpcenter articles, and safe public documents",
+                  "Use custom prompts to ensure AI aligns with your brand tone and empathy standards",
+                  "Designed with healthcare data privacy and security requirements in mind."
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#6039ea] flex-shrink-0 mt-0.5" />
@@ -260,13 +259,13 @@ const Healthcare = () => {
             <motion.div variants={fadeInUp} className="w-full lg:w-1/2 space-y-6">
               <h3 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight">Swift Human Handoff for Healthcare Support</h3>
               <p className="text-gray-600 leading-relaxed text-lg">
-                Automate repeated patient queries with healthcare AI agent while ensuring seamless escalation for complex cases that need human empathy and expertise.
+                Automate repeated patient queries with an AI agent while ensuring seamless escalation for complex or sensitive cases that need human empathy and medical expertise.
               </p>
               <ul className="space-y-4 pt-2">
                 {[
-                  "Assign patient queries to the right teams based on urgency, specialty, or tags",
-                  "Use inbuilt CSAT to track efficiency and improve patient satisfaction",
-                  "Improve Resolution Time by 80% just by automating responses and enabling swift human handoff in healthcare"
+                  "Assign patient queries to the right teams based on urgency, specialty, or conversational tags",
+                  "Use inbuilt feedback tools to track efficiency and improve patient satisfaction",
+                  "Improve response times by automating initial triage and enabling swift human handoff"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <CheckCircle2 className="w-5 h-5 text-[#6039ea] flex-shrink-0 mt-0.5" />
@@ -296,7 +295,7 @@ const Healthcare = () => {
         </div>
       </motion.section>
 
-      {/* Stats Section (Cream Background) */}
+      {/* Stats Section (Factual updates) */}
       <motion.section 
         initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
         variants={staggerContainer}
@@ -305,32 +304,32 @@ const Healthcare = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
           <motion.div variants={fadeInUp} className="w-full lg:w-1/3">
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-              AI-Powered Patient Support Platform for Healthcare
+              AI-Powered Patient Support Platform
             </h2>
             <p className="text-sm text-gray-600 mb-6">
-              Kas newerax brings all your patient queries from across email, chat, and messaging platforms under one platform. Leverage state-of-the-art AI models to automate repeated queries with accuracy and scalability.
+              Kas newerax brings all your routine patient queries from across email, chat, and messaging platforms into one workflow. Reduce repetitive support workload and help teams resolve requests faster.
             </p>
-            <Link to="/try-for-free" className={`inline-block px-6 py-2.5 rounded-md ${bgPrimary} text-white font-semibold text-sm hover:bg-[#502cd1] transition-colors`}>
-              Try for Free
+            <Link to="/signup" className={`inline-block px-6 py-2.5 rounded-md ${bgPrimary} text-white font-semibold text-sm hover:bg-[#502cd1] transition-colors`}>
+              Request Early Access
             </Link>
           </motion.div>
           
           <motion.div variants={fadeInUp} className="w-full lg:w-2/3 grid grid-cols-2 md:grid-cols-4 gap-6">
              <div className="flex flex-col items-center text-center">
                 <Clock className="w-10 h-10 text-green-700 mb-3" />
-                <p className="text-xs font-bold text-gray-900">90% Reduction in <br />Average Resolution Time</p>
+                <p className="text-xs font-bold text-gray-900">Faster Average <br />Response Times</p>
              </div>
              <div className="flex flex-col items-center text-center">
-                <Coins className="w-10 h-10 text-green-700 mb-3" />
-                <p className="text-xs font-bold text-gray-900">50% Decrease in <br />Cost Per Resolution</p>
+                <Activity className="w-10 h-10 text-green-700 mb-3" />
+                <p className="text-xs font-bold text-gray-900">Reduced Repetitive <br />Support Workload</p>
              </div>
              <div className="flex flex-col items-center text-center">
                 <Users className="w-10 h-10 text-green-700 mb-3" />
-                <p className="text-xs font-bold text-gray-900">70% Increase in <br />Customer Retention Rate</p>
+                <p className="text-xs font-bold text-gray-900">Seamless Human <br />Handoff & Routing</p>
              </div>
              <div className="flex flex-col items-center text-center">
                 <ThumbsUp className="w-10 h-10 text-green-700 mb-3" />
-                <p className="text-xs font-bold text-gray-900">40% Increase in <br />CSAT Score</p>
+                <p className="text-xs font-bold text-gray-900">Enhanced Patient <br />Satisfaction Focus</p>
              </div>
           </motion.div>
         </div>
@@ -340,7 +339,7 @@ const Healthcare = () => {
       <motion.section 
         initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
         variants={staggerContainer}
-        className="py-24 bg-[#fffaf5]"
+        className="py-24 bg-white"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row gap-12">
           <motion.div variants={fadeInUp} className="w-full lg:w-1/3">
@@ -398,9 +397,9 @@ const Healthcare = () => {
           <div className="flex flex-col lg:flex-row gap-6">
              {/* Left Large Card */}
              <motion.div variants={fadeInUp} className="w-full lg:w-1/3 bg-[#1e1642] p-8 rounded-2xl border border-white/10 flex flex-col">
-                <h3 className="text-xl font-bold mb-4">In Built Native Integration</h3>
+                <h3 className="text-xl font-bold mb-4">Native Integrations</h3>
                 <p className="text-gray-300 text-sm leading-relaxed mb-8 flex-grow">
-                  Kas newerax features native integration, eliminating the need for any manual coding or installation. You can seamlessly add Kas newerax AI to your existing workflow-even without any coding expertise.
+                  Kas newerax features native integrations, eliminating the need for heavy manual coding. You can seamlessly add Kas newerax AI to your existing workflows.
                 </p>
                 <div className="w-full h-48 bg-[#2d1b6e] rounded-xl flex items-center justify-center border border-white/10">
                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center">
@@ -412,21 +411,21 @@ const Healthcare = () => {
              {/* Right Stacked Cards */}
              <div className="w-full lg:w-2/3 flex flex-col gap-6">
                 <motion.div variants={fadeInUp} className="bg-[#1e1642] p-6 rounded-2xl border border-white/10 flex flex-col justify-center">
-                   <h3 className="text-lg font-bold mb-2">24/7 Support</h3>
+                   <h3 className="text-lg font-bold mb-2">Automated Support</h3>
                    <p className="text-gray-300 text-sm leading-relaxed">
-                     Kas newerax offers round-the-clock support in over 100 languages, ensuring that whenever you face challenges or require a custom integration, our dedicated team is always available to assist you-no matter the time.
+                     Kas newerax offers automated support with multilingual capabilities, ensuring that routine patient inquiries are handled efficiently outside of regular business hours.
                    </p>
                 </motion.div>
                 <motion.div variants={fadeInUp} className="bg-[#1e1642] p-6 rounded-2xl border border-white/10 flex flex-col justify-center">
                    <h3 className="text-lg font-bold mb-2">Latest AI Models for Accuracy</h3>
                    <p className="text-gray-300 text-sm leading-relaxed">
-                     Kas newerax utilizes cutting-edge AI models from OpenAI, Google Gemini, and Anthropic, allowing you to choose the perfect fit for your specific needs. Plus, our system automatically adapts to your content, eliminating the need for manual training.
+                     Kas newerax is built to support cutting-edge AI models from OpenAI, Google Gemini, and Anthropic, allowing you to choose the perfect fit for your specific needs.
                    </p>
                 </motion.div>
                 <motion.div variants={fadeInUp} className="bg-[#1e1642] p-6 rounded-2xl border border-white/10 flex flex-col justify-center">
-                   <h3 className="text-lg font-bold mb-2">One Stop Solution for Support</h3>
+                   <h3 className="text-lg font-bold mb-2">Unified Support Workflow</h3>
                    <p className="text-gray-300 text-sm leading-relaxed">
-                     Kas newerax is an incredibly user-friendly support automation solution that consolidates conversations from phone, email, chat, and social media into a single platform. Businesses can effortlessly automate support across all these channels without any hassle.
+                     Kas newerax is a user-friendly support automation solution that consolidates routine conversations into a single platform, keeping human agents in control of the escalation process.
                    </p>
                 </motion.div>
              </div>
@@ -450,10 +449,10 @@ const Healthcare = () => {
             Expand as confidence grows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/get-started" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors`}>
-              Get Started
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgPrimary} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
-            <Link to="/demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
+            <Link to="/book-demo" className={`w-full sm:w-auto px-8 py-3.5 rounded-md border border-[#6039ea] ${primaryColor} font-semibold text-base hover:bg-indigo-50 transition-colors bg-white`}>
               See a Live Demo
             </Link>
           </div>

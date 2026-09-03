@@ -20,21 +20,20 @@ const Hero = () => {
             className="w-full lg:w-1/2 flex flex-col items-start text-left"
           >
             <h1 className="text-[2.5rem] leading-[1.1] sm:text-5xl lg:text-[4rem] font-bold text-[#14142b] tracking-tight">
-              Automate customer <br className="hidden lg:block" />
-              conversations fast - <br />
-              <span className={themeColor}>without losing control, <br className="hidden lg:block"/> CSAT, or sleep.</span>
+              AI-powered customer support <br className="hidden lg:block" />
+              <span className={themeColor}>automation for growing businesses.</span>
             </h1>
             
             <p className="mt-6 text-lg text-gray-600 leading-relaxed max-w-xl">
-              KAS NEWERAX TECHNOLOGY PRIVATE LIMITED helps customer support teams reduce ticket volume using AI that knows when to answer, when to escalate, and when to step aside. Each AI agent operates with clear boundaries.
+              Kas newerax helps businesses automate repetitive customer conversations across web chat, WhatsApp, email and voice. AI handles routine requests and routes complex or sensitive conversations to human support teams with context.
             </p>
             
             <div className="mt-8 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
               <Link 
-                to="/try-for-free" 
+                to="/signup" 
                 className={`w-full sm:w-auto px-8 py-3.5 rounded-md ${bgThemeColor} text-white font-semibold text-base hover:bg-[#502cd1] transition-colors text-center`}
               >
-                Try for Free
+                Request Early Access
               </Link>
               <Link 
                 to="/book-demo" 
@@ -45,7 +44,7 @@ const Hero = () => {
             </div>
             
             <p className="mt-5 text-sm text-gray-400 font-medium">
-              No Credit Card Required . 30 Days Free Trial .  
+              Currently in early access & pilot stage.
             </p>
           </motion.div>
 
