@@ -256,12 +256,7 @@ const AuthPage = () => {
                </div>
 
                <div>
-                  <div className="flex items-center justify-between mb-2">
-                     <label className="block text-xs font-bold text-gray-700">Password</label>
-                     {isLoginView && (
-                       <Link to="#" className="text-xs font-medium text-[#6039ea] hover:underline">Forgot password?</Link>
-                     )}
-                  </div>
+                  
                   <div className="relative">
                      <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                         <Lock className="h-4 w-4 text-gray-400" />

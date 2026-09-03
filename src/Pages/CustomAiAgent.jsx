@@ -430,27 +430,7 @@ const CustomAIAgents = () => {
         </motion.div>
       </motion.section>
 
-      {/* Ready when you are (Dark Banner) */}
-      <motion.section 
-        initial="hidden" whileInView="visible" viewport={{ once: true }}
-        variants={fadeInUp}
-        className="py-24 bg-[#140f2d] text-center px-4 sm:px-6 lg:px-8"
-      >
-        <div className="max-w-3xl mx-auto flex flex-col items-center">
-          <p className="text-[#0ea5e9] font-bold text-[10px] mb-6 tracking-[0.2em] uppercase flex items-center justify-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-[#0ea5e9]"></span> READY WHEN YOU ARE
-          </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-tight">
-            Bring your support workflows onto one AI platform
-          </h2>
-          <p className="text-base text-gray-400 mb-10 leading-relaxed max-w-2xl">
-            A 30-minute workshop to map your current support workflows and show your leaders exactly where consolidating onto Kas newerax pays for itself.
-          </p>
-          <Link to="/workshop" className={`px-8 py-4 rounded-md ${bgPrimary} text-white font-bold text-sm hover:bg-[#502cd1] transition-colors shadow-md`}>
-            Book an AI Discovery Workshop
-          </Link>
-        </div>
-      </motion.section>
+     
 
       {/* FAQ Section */}
       <motion.section 
@@ -522,8 +502,8 @@ const CustomAIAgents = () => {
             Expand as confidence grows.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link to="/workshop" className={`w-full sm:w-auto px-8 py-4 rounded-md ${bgPrimary} text-white font-bold text-sm hover:bg-[#502cd1] transition-colors shadow-sm`}>
-              Book an AI discovery workshop
+            <Link to="/signup" className={`w-full sm:w-auto px-8 py-4 rounded-md ${bgPrimary} text-white font-bold text-sm hover:bg-[#502cd1] transition-colors shadow-sm`}>
+              Request Early Access
             </Link>
           </div>
         </div>
